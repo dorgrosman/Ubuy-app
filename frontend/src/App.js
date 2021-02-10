@@ -36,6 +36,7 @@ function App() {
           <header className="row">
             <div><Link className="logo" to="/home">U-buy</Link></div>
             <div>
+            <Link className="logo" to="/home">Home</Link>
               <Link to="/cart">Cart
               {cartItems.length > 0 && (
                   <span className="badge">{cartItems.length}</span>
