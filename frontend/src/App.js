@@ -32,77 +32,77 @@ function App() {
 
   return (
     <BrowserRouter >
-        <div className="grid-container">
-          <header className="row">
-            <div><Link className="logo" to="/home">U-buy</Link></div>
-            <div>
-            <Link className="logo" to="/home">Home</Link>
-              <Link to="/cart">Cart
+      <div className="grid-container">
+        <header className="row">
+          <div><Link className="logo" to="/home">U-buy</Link></div>
+          <div>
+            <Link to="/home">Home</Link>
+            <Link to="/cart">Cart
               {cartItems.length > 0 && (
-                  <span className="badge">{cartItems.length}</span>
-                )}
-              </Link>
-              {
-                userInfo ?
-                  <div className="dropdown">
-                    <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '}</Link>
-                    <ul className="dropdown-content">
-                      <Link to="/home" onClick={signoutHandler}>Sign Out</Link>
-                      <li>
-                        <Link to="/orderhistory">Order History</Link>
-                      </li>
-                      <li>
-                        <Link to="/profile">User Profile</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  : <Link to="/SignIn">Sign In</Link>
-              }
-              {userInfo && userInfo.isAdmin && (
+                <span className="badge">{cartItems.length}</span>
+              )}
+            </Link>
+            {
+              userInfo ?
                 <div className="dropdown">
-                  <Link to="#admin">
-                    Admin <i className="fa fa-caret-down"></i>
-                  </Link>
+                  <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '}</Link>
                   <ul className="dropdown-content">
+                    <Link to="/home" onClick={signoutHandler}>Sign Out</Link>
                     <li>
-                        <Link to="/dashboard">Dashboard</Link>
+                      <Link to="/orderhistory">Order History</Link>
                     </li>
                     <li>
-                        <Link to="/productlist">Products</Link>
-                    </li>
-                    <li>
-                        <Link to="/userlist">Users</Link>
-                    </li>
-                    <li>
-                        <Link to="/orderlist">Order</Link>
+                      <Link to="/profile">User Profile</Link>
                     </li>
                   </ul>
                 </div>
+                : <Link to="/SignIn">Sign In</Link>
+            }
+            {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <Link to="#admin">
+                  Admin <i className="fa fa-caret-down"></i>
+                </Link>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="/dashboard">Dashboard</Link>
+                  </li>
+                  <li>
+                    <Link to="/productlist">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/userlist">Users</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderlist">Order</Link>
+                  </li>
+                </ul>
+              </div>
 
-              )}
-            </div>
-          </header>
-          <main>
-            <Route path="/cart/:id?" component={CartPage} />
-            <Route path="/product/:id" component={ProductPage} exact/>
-            <Route path="/product/:id/edit" component={ProductEditPage} exact/>
-            <Route path="/signin" component={SigninPage} />
-            <Route path="/register" component={RegisterPage} />
-            <Route path="/shipping" component={ShippingAddressPage} />
-            <Route path="/payment" component={PaymentMethodPage} />
-            <Route path="/placeorder" component={PleaseOrderPage} />
-            <Route path="/order/:id" component={OrderPage} />
-            <Route path="/orderhistory" component={OrderHistoryPage} />
-            <PrivateRoute
+            )}
+          </div>
+        </header>
+        <main>
+          <Route path="/cart/:id?" component={CartPage} />
+          <Route path="/product/:id" component={ProductPage} exact />
+          <Route path="/product/:id/edit" component={ProductEditPage} exact />
+          <Route path="/signin" component={SigninPage} />
+          <Route path="/register" component={RegisterPage} />
+          <Route path="/shipping" component={ShippingAddressPage} />
+          <Route path="/payment" component={PaymentMethodPage} />
+          <Route path="/placeorder" component={PleaseOrderPage} />
+          <Route path="/order/:id" component={OrderPage} />
+          <Route path="/orderhistory" component={OrderHistoryPage} />
+          <PrivateRoute
             path="/profile"
             component={ProfilePage}
           ></PrivateRoute>
           <AdminRoute path="/productList" component={ProductListPage} ></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListPage} ></AdminRoute>
-            <Route path="/home" component={HomePage} />
-          </main>
-          <footer className="row center">All right reserved</footer>
-        </div>
+          <Route path="/home" component={HomePage} />
+        </main>
+        <footer className="row center">All right reserved</footer>
+      </div>
     </BrowserRouter>
   );
 }
