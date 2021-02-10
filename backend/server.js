@@ -8,6 +8,7 @@ import orderRouter from './routers/orderRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
 
 dotenv.config();
+app.use(express.static('public')); ///
 
 const app = express();
 app.use(express.json());

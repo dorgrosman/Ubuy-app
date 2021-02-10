@@ -5,6 +5,7 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules BestBuy/backend/server.js"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
+    "heroku": "^7.47.12",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.12",
     "multer": "^1.4.2",
@@ -24,5 +26,9 @@
     "eslint": "^7.17.0",
     "eslint-plugin-react": "^7.22.0",
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
   }
 }
