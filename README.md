@@ -1,8 +1,6 @@
 # Ubuy-app
 
-
-
-![alt text](https://github.com/dorgrosman/Ubuy-app/uploads/blob/main/U-buy.jpg?raw=true)
+![U-buy](https://user-images.githubusercontent.com/71778859/107683144-e1e3af00-6ca9-11eb-8530-dcbd59e2a9a1.jpg)
 
 
 ## Demo
