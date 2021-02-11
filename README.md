@@ -2,4 +2,4 @@
 
 
 
-![alt text](https://github.com/dorgrosman/Ubuy-app/blob/main/U-buy.jpg?raw=true)
+![alt text](https://github.com/dorgrosman/Ubuy-app/uploads/blob/main/U-buy.jpg?raw=true)
