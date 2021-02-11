@@ -48,7 +48,7 @@ const ShippingAddressPage = (props) => {
                     <input
                         type="text"
                         id="fullName"
-                        placeholder="Enter full name11111111"
+                        placeholder="Enter full name"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         required
