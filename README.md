@@ -7,7 +7,7 @@
  working live demo https://u-buy-app.herokuapp.com/SignIn
 
 ## Site
-
+•	Built an Amazon-style marketplace for an e-commerce website called “U-Buy”. 
 
 
 ## Bild with
