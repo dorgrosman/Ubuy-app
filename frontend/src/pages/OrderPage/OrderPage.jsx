@@ -41,7 +41,7 @@ const OrderPage = (props) => {
             
             setSdkReady(true);
             script.async = true;
-            // script.onload = () => { /// לבדוק את העיניין
+            // script.onload = () => { /// Need to chack it
 
             // };
             
