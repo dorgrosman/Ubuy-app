@@ -30,8 +30,8 @@ const CartPage = (props) => {
     
    }
 
-
    const checkOutHendler = () => {
+      console.log('props.history:', props.history)
       props.history.push('/signin?redirect=shipping');
     };
    return (
