@@ -28,7 +28,6 @@ const ShippingAddressPage = (props) => {
         event.preventDefault();
         dispatch(saveShippingAddress({ fullName, address, city, postalCode, country }))
         props.history.push('/payment')
-        console.log('shippingAddress:', shippingAddress)
     }
 
     return (

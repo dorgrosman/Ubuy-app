@@ -44,7 +44,6 @@ orderRouter.post(
         totalPrice: req.body.totalPrice,
         user: req.user._id,
       });
-      console.log('order', req.body.shippingAddress)
       const createdOrder = await order.save();
       res
         .status(201)
@@ -98,9 +97,7 @@ orderRouter.delete(
 
 
 orderRouter.put('/:id/deliver', isAuth, expressAsyncHandler(async (req, res) => {  ///For inform the payment
-  console.log('req.params.id:', req.params.id)
   const order = await Order.findById(req.params.id)
-  console.log('order:', order)
   if (order) {
     order.isDelivered = true;
     order.delivered = Date.now();

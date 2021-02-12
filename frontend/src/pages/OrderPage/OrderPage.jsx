@@ -12,6 +12,7 @@ import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from './../../constants/orderCon
 const OrderPage = (props) => {
     const orderId = props.match.params.id;
     const [sdkReady, setSdkReady] = useState(false);
+    console.log('sdkReadyaaaaaaaaaa:', sdkReady)
     const orderDetails = useSelector(state => state.orderDetaile);
 
     const userSignin = useSelector(state => state.userSignin);
@@ -37,10 +38,13 @@ const OrderPage = (props) => {
             const script = document.createElement('script');
             script.type = 'text/javascript';
             script.src = `https://www.paypal.com/sdk/js?client-id=${data}`;
+            
+            setSdkReady(true);
             script.async = true;
-            script.onload = () => {
-                setSdkReady(true);
-            };
+            // script.onload = () => { /// לבדוק את העיניין
+
+            // };
+            
             document.body.appendChild(script);
         };
         if (!order || successPay || successeliver || (order && order._id !== orderId)) {
@@ -178,7 +182,8 @@ const OrderPage = (props) => {
                                     </li>
                                     {!order.isPaid && (
                                         <li>
-                                            {!sdkReady ? (
+                                            {console.log('sdkReady:', sdkReady)}
+                                            { !sdkReady ? (
                                                 <LoadingBox></LoadingBox>
                                             ) : (
                                                     <>
@@ -192,8 +197,7 @@ const OrderPage = (props) => {
                                                 )}
                                         </li>
                                     )}
-                                    {/* {console.log('userInfo.isAdmin:', !order.isDelivered)} */}
-                                    {/* {userInfo.isAdmin && order.isPaid && !order.isDelivered && ( */}
+
                                     {userInfo.isAdmin && !order.isPaid && !order.isDelivered && (
                                         <li>
                                             {loadingDeliver && <LoadingBox></LoadingBox>}

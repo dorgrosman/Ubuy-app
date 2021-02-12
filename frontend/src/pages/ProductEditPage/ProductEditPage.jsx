@@ -73,7 +73,6 @@ const ProductEditPage = (props) => {
     const uploadFileHandler = async(evevt) => {
         const file = evevt.target.files[0];
         const bodyFormData = new FormData();
-        console.log('file:', file)
         
         bodyFormData.append('img', file);
         setLoadingUpload(true);
