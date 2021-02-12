@@ -2,7 +2,7 @@
 
 //     products:[
 //         {
-//             _id:'1',
+//             
 //             name:'White T-shirt',
 //             catrgory:'Shirts',
 //             img:'../assets/img/whit-T-shirt.jpeg',
