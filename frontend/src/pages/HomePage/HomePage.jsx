@@ -11,44 +11,32 @@ import './HomePage.scss'
 export default function HomePage() {
 
   const dispatch = useDispatch();
-  const productList = useSelector( state => state.productList);
+  const productList = useSelector(state => state.productList);
   const { loading, error, products } = productList;
- 
+
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
 
-  // return (
-  //   <div>
-
-  //     {console.log('loading:', loading)}
-  //     {console.log('products:', products)}
-
-  //     {loading ? (<LoadingBox></LoadingBox>) : error ? (<MassageBox variant="danger" >{error}</MassageBox>) : (
-  //      products ? ( <div className="row center">
-  //         {products.map((product) => (
-  //           // console.log('product:', product)
-  //           <Product key={product._id} product={product} exact />
-  //         ))}
-  //       </div>
-  //     )}
-  //   </div>
-  // )
   return (
     <div>
+      <section className="hero flex column align-center justify-center">
+        <h1 className="hero-txt head">Adventure awaits, let's find it together</h1>
+        <h2 className="hero-txt small">Choose your destination, we'll provide the best guides</h2>
+  </section>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MassageBox variant="danger">{error}</MassageBox>
-      ) : products ?(
+      ) : products ? (
         <div className="row center">
           {products.map((product) => (
             <Product key={product._id} product={product}></Product>
           ))}
-        </div>) : null 
+        </div>) : null
       }
     </div>
   );
-  
+
 }
 
