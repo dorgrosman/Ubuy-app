@@ -136,6 +136,10 @@ button.small {
     text-align: center;
     z-index: 1;
     padding: 0 1rem;
+    -webkit-text-stroke: 2px black; /* width and color */
+
+    // font-family: sans;
+    //  color: yellow;
     &.head {
       font-family: montserratBold;
       font-size: rem(40px);
