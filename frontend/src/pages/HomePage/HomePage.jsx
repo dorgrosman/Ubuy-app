@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div>
       <section className="hero flex column align-center justify-center">
-        <h1 className="hero-txt head">Buy More, Pau Less</h1>
+        <h1 className="hero-txt head">Buy More, Pay Less</h1>
         <h2 className="hero-txt small">Choose your garment, we'll provide the best product</h2>
   </section>
       {loading ? (
