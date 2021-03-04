@@ -89,29 +89,29 @@ export const productUpdate = (product) => async (dispatch, getState) => {
     }
 }
 
-export const deleteProduct = (productId) => async (dispatch, getState) => {
-    dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId })
-    const {
-        userSignin: { userInfo },
-    } = getState();
-    try{
-        const { data } = await Axios.delete(`/api/products/${productId}`, {
-            headers: {
-                Authorization: `Bearer ${userInfo.token}`,
-            },
-        })
-        dispatch({
-            type: PRODUCT_DELETE_SUCCESS
-        })
-    }catch(error){
-        const message =
-            error.response && error.response.data.message
-                ? error.response.data.message
-                : error.message;
-        dispatch({ type: PRODUCT_DELETE_FAIL, payload: message });
-    }
+// export const deleteProduct = (productId) => async (dispatch, getState) => {
+//     dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId })
+//     const {
+//         userSignin: { userInfo },
+//     } = getState();
+//     try{
+//         const { data } = await Axios.delete(`/api/products/${productId}`, {
+//             headers: {
+//                 Authorization: `Bearer ${userInfo.token}`,
+//             },
+//         })
+//         dispatch({
+//             type: PRODUCT_DELETE_SUCCESS
+//         })
+//     }catch(error){
+//         const message =
+//             error.response && error.response.data.message
+//                 ? error.response.data.message
+//                 : error.message;
+//         dispatch({ type: PRODUCT_DELETE_FAIL, payload: message });
+//     }
 
-}
+// }
 
 
 
