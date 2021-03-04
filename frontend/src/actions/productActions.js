@@ -111,7 +111,7 @@ export const deleteProduct = (productId) => async (dispatch, getState) => {
         dispatch({ type: PRODUCT_DELETE_FAIL, payload: message });
     }
 
-// }
+}
 
 
 
