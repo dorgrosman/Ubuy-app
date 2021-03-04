@@ -23,7 +23,7 @@ import UserListPage from './pages/UserListPage';
 import SearchBox from './cmps/SearchBox/SearchBox';
 import SearchPage from './pages/SearchPage/SearchPage';
 import UserEditPage from './pages/UserEtitPage/UserEtitPage';
-// import SellerRoute from './cmps/SellerRoute';
+import SellerRoute from './cmps/SellerRouter/SellerRouter';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -119,24 +119,12 @@ function App() {
           <Route path="/order/:id" component={OrderPage} />
           <Route path="/orderhistory" component={OrderHistoryPage} />
           <Route path="/search/name/:name?" component={SearchPage} exact/>
-          <PrivateRoute
-            path="/profile"
-            component={ProfilePage}
-          ></PrivateRoute>
+          <PrivateRoute path="/profile" component={ProfilePage}></PrivateRoute>
           <AdminRoute path="/productList" component={ProductListPage}  exact></AdminRoute>
-          <AdminRoute path="/orderlist" component={OrderListPage} ></AdminRoute>
-          <AdminRoute
-            path="/user/:id/edit"
-            component={UserEditPage}
-          ></AdminRoute>
-          {/* <SellerRoute
-            path="/productlist/seller"
-            component={ProductListPage}
-          ></SellerRoute>
-          <SellerRoute
-            path="/orderlist/seller"
-            component={OrderListPage}
-          ></SellerRoute> */}
+          <AdminRoute path="/orderlist" component={OrderListPage} exact></AdminRoute>
+          <AdminRoute path="/user/:id/edit" component={UserEditPage} ></AdminRoute>
+          <SellerRoute path="/productlist/seller "component={ProductListPage} ></SellerRoute>
+          <SellerRoute  path="/orderlist/seller" component={OrderListPage} ></SellerRoute>
           <AdminRoute path="/userlist" component={UserListPage}></AdminRoute>
           <Route path="/home" component={HomePage} />
         </main>

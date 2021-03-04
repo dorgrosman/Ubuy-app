@@ -13,7 +13,6 @@ orderRouter.get(
   isSellerOrAdmin,
 
   expressAsyncHandler(async (req, res) => {
-
     const seller = req.query.seller || '';
     const sellerFilter = seller ? { seller } : {};
     const orders = await Order.find({}).populate('user', 'name');

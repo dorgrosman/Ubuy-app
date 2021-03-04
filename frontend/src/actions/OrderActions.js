@@ -113,25 +113,25 @@ export const listOrderMine = () => async (dispatch, getState) => {
   }
 };
 
-// export const listOrders = ({ seller = '' }) => async (dispatch, getState) => {
-//   dispatch({
-//     type: ORDER_LIST_REQUEST
-//   });
-//   const {
-//     userSignin: { userInfo },
-//   } = getState();
-//   try {
-//     const { data } = await Axios.get(`/api/orders?seller=${seller}`, {
-//       headers: {
-//         Authorization: `Bearer ${userInfo.token}`
-//       },
-//     })
+export const listOrders = ({ seller = '' }) => async (dispatch, getState) => {
+  dispatch({
+    type: ORDER_LIST_REQUEST
+  });
+  const {
+    userSignin: { userInfo },
+  } = getState();
+  try {
+    const { data } = await Axios.get(`/api/orders?seller=${seller}`, {
+      headers: {
+        Authorization: `Bearer ${userInfo.token}`
+      },
+    })
 
-//     dispatch({ type: ORDER_LIST_SUCCESS, payload: data });
-//   } catch (error) {
-//     dispatch({ type: ORDER_LIST_FAIL, payload: error.message })
-//   }
-// })
+    dispatch({ type: ORDER_LIST_SUCCESS, payload: data });
+  } catch (error) {
+    dispatch({ type: ORDER_LIST_FAIL, payload: error.message })
+  }
+}
 
 export const deleteOrder = (orderId) => (async (dispatch, getState) => {
   dispatch({ type: ORDER_DELETE_REQUEST, payload: orderId })
