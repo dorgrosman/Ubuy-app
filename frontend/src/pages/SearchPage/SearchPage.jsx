@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import { listProducts } from './../../actions/ProductActions';
+// import { listProducts } from './../../actions/ProductActions';
 import { useDispatch, useSelector } from 'react-redux';
 import LoadingBox from './../../cmps/LoadingBox/LoadingBox';
 import MassageBox from './../../cmps/MassageBox/MassageBox';
@@ -12,7 +12,7 @@ export default function SearchPage(props) {
     const productList = useSelector(state => state.productList);
     const { error, loading, products } = productList
     useEffect(() => {
-        dispatch(listProducts({ name: name !== 'all' ? name : '' }))
+        // dispatch(listProducts({ name: name !== 'all' ? name : '' }))
 
     }, [dispatch, name])
 
