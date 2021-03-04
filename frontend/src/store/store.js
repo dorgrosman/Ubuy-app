@@ -2,8 +2,8 @@ import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import { productDetailsReducer, productListReducer, productUpdateReducer } from '../reducers/productReducers'
 import { CartReducer } from './../reducers/CartReducers';
-import { UserRegisterReducers, UserSigninReducers, UserUpdateProfileReducer } from '../reducers/UserSigninReducers';
-import { orderDetailsReducer, OrderReducer, orderPayReducer, orderMineListReducer, orderListReducer, orderDeleteReducer, orderDeliverReducer } from './../reducers/OrderReducers';
+import { UserUpdateReducer,UserDeleteReducer, userListReducer, UserRegisterReducers, UserSigninReducers, UserUpdateProfileReducer } from '../reducers/UserSigninReducers';
+import {  orderDetailsReducer, OrderReducer, orderPayReducer, orderMineListReducer, orderListReducer, orderDeleteReducer, orderDeliverReducer } from './../reducers/OrderReducers';
 import { UserDetailsReducer } from './../reducers/UserSigninReducers';
 import { productCreateReducer, productDeleteReducer } from './../reducers/productReducers';
 
@@ -32,20 +32,23 @@ const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
   cart: CartReducer,
-  userSignin: UserSigninReducers,
   userRegister: UserRegisterReducers,
   orderCreate: OrderReducer,
   orderDetaile: orderDetailsReducer,
-  orderPay :orderPayReducer,
-  mineList :orderMineListReducer,
-  userDetails:UserDetailsReducer,
+  orderPay: orderPayReducer,
+  orderList: orderListReducer,
+  orderDelete: orderDeleteReducer,
+  orderDeliver: orderDeliverReducer,
+  mineList: orderMineListReducer,
+  userDetails: UserDetailsReducer,
+  userSignin: UserSigninReducers,
   userUpdateProfile: UserUpdateProfileReducer,
-  productCreate:productCreateReducer,
-  updateProduct:productUpdateReducer,
-  productDelete:productDeleteReducer,
-  orderList:orderListReducer,
-  orderDelete:orderDeleteReducer,
-  orderDeliver:orderDeliverReducer,
+  userList: userListReducer,
+  userDelete: UserDeleteReducer,
+  userUpdate: UserUpdateReducer,
+  productCreate: productCreateReducer,
+  updateProduct: productUpdateReducer,
+  productDelete: productDeleteReducer,
 
 });
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

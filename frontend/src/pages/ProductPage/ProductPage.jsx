@@ -6,7 +6,7 @@ import MassageBox from './../../cmps/MassageBox/MassageBox';
 import Rating from '../../cmps/Rating/Rating'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { detailsProduct } from '../../actions/productActions';
+import { detailsProduct } from '../../actions/ProductActions';
 
 const ProductPage = (props) => {
   const dispatch = useDispatch();

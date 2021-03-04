@@ -4,7 +4,7 @@ import Product from '../../cmps/Product/Product'
 import LoadingBox from './../../cmps/LoadingBox/LoadingBox';
 import MassageBox from './../../cmps/MassageBox/MassageBox';
 import { useDispatch, useSelector } from 'react-redux';
-import { listProducts } from '../../actions/productActions';
+import { listProducts } from '../../actions/ProductActions';
 import './HomePage.scss'
 
 
@@ -15,7 +15,7 @@ export default function HomePage() {
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    dispatch(listProducts());
+    dispatch(listProducts({}));
   }, [dispatch]);
 
   return (

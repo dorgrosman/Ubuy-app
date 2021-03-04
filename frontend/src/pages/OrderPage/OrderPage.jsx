@@ -60,7 +60,7 @@ const OrderPage = (props) => {
                 }
             }
         }
-    }, [dispatch, order, orderId, sdkReady, successPay, successeliver]);
+    }, [dispatch, orderId, sdkReady, successPay, successeliver, order]);
 
     const successPaymentHandler = (paymentResult) => {
         dispatch(payOrder(order, paymentResult))
