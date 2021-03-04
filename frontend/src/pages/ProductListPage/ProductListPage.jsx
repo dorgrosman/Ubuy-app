@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import MassageBox from './../../cmps/MassageBox/MassageBox';
 import LoadingBox from './../../cmps/LoadingBox/LoadingBox';
-import { listProducts, createProduct, deleteProduct } from '../../actions/ProductActions';
+import { listProducts, createProduct, deleteProduct } from '../../actions/productActions';
 import { PRODUCT_CREATE_RESET ,PRODUCT_DELETE_RESET } from './../../constants/productConstants';
 
 const ProductListPage = (props) => {

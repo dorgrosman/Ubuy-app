@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { detailsProduct, productUpdate } from '../../actions/ProductActions';
+import { detailsProduct, productUpdate } from '../../actions/productActions';
 import LoadingBox from '../../cmps/LoadingBox/LoadingBox';
 import MassageBox from '../../cmps/MassageBox/MassageBox';
 import { PRODUCT_UPDATE_RESET } from '../../constants/productConstants';
