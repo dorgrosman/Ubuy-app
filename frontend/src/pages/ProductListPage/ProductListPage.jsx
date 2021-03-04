@@ -103,7 +103,7 @@ const ProductListPage = (props) => {
                                                 onClick={() => props.history.push(`/product/${product._id}/edit`)}>
                                                 Edit
                                             </button>
-                                            <button className="small" type="button" onClick={() => deleteHendler(product)}>Deleit</button>
+                                            <button className="small" type="button" onClick={() => deleteHendler(product)}>Delete</button>
                                             </div>
                                         </td>
                                     </tr>
