@@ -24,6 +24,9 @@ import SearchBox from './cmps/SearchBox/SearchBox';
 import SearchPage from './pages/SearchPage/SearchPage';
 import UserEditPage from './pages/UserEtitPage/UserEtitPage';
 import SellerRoute from './cmps/SellerRouter/SellerRouter';
+import SellerPage from './pages/SellerPage/SellerPage';
+import NavBar from './cmps/NavBar/NavBar';
+
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -35,17 +38,19 @@ function App() {
     dispatch(signout());
   };
 
+
   return (
     <BrowserRouter >
       <div className="grid-container">
-        <header className="row">
+        <NavBar ></NavBar> 
+        {/* <header className="row ">
           <div>
             <Link className="logo" to="/home">U-buy</Link>
           </div>
           <div>
-            <Route render={({history}) => <SearchBox history={history}></SearchBox>} />
+            <Route render={({ history }) => <SearchBox history={history}></SearchBox>} />
           </div>
-          <div>
+          <div className=''>
             <Link to="/home">Home</Link>
             <Link to="/cart">Cart
               {cartItems.length > 0 && (
@@ -68,7 +73,7 @@ function App() {
                 </div>
                 : <Link to="/SignIn">Sign In</Link>
             }
-               {userInfo && userInfo.isSeller && (
+            {userInfo && userInfo.isSeller && (
               <div className="dropdown">
                 <Link to="#admin">
                   Seller <i className="fa fa-caret-down"></i>
@@ -106,8 +111,9 @@ function App() {
 
             )}
           </div>
-        </header>
+        </header> */}
         <main>
+          <Route path="/seller/:id" component={SellerPage}></Route>
           <Route path="/cart/:id?" component={CartPage} />
           <Route path="/product/:id" component={ProductPage} exact />
           <Route path="/product/:id/edit" component={ProductEditPage} exact />
@@ -118,13 +124,13 @@ function App() {
           <Route path="/placeorder" component={PleaseOrderPage} />
           <Route path="/order/:id" component={OrderPage} />
           <Route path="/orderhistory" component={OrderHistoryPage} />
-          <Route path="/search/name/:name?" component={SearchPage} exact/>
+          <Route path="/search/name/:name?" component={SearchPage} exact />
           <PrivateRoute path="/profile" component={ProfilePage}></PrivateRoute>
-          <AdminRoute path="/productList" component={ProductListPage}  exact></AdminRoute>
+          <AdminRoute path="/productList" component={ProductListPage} exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListPage} exact></AdminRoute>
           <AdminRoute path="/user/:id/edit" component={UserEditPage} ></AdminRoute>
-          <SellerRoute path="/productlist/seller "component={ProductListPage} ></SellerRoute>
-          <SellerRoute  path="/orderlist/seller" component={OrderListPage} ></SellerRoute>
+          <SellerRoute path="/productlist/seller" component={ProductListPage} ></SellerRoute>
+          <SellerRoute path="/orderlist/seller" component={OrderListPage} ></SellerRoute>
           <AdminRoute path="/userlist" component={UserListPage}></AdminRoute>
           <Route path="/home" component={HomePage} />
         </main>

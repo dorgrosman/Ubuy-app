@@ -31,7 +31,10 @@ const ProfilePage = () => {
             setName(user.name);
             setEmail(user.email);
             if (user.seller) {
-                setSellerName(user.seller.name);
+                console.log('user:', user)
+                console.log('user.seller:', user.seller)
+                console.log('user.seller.name:', user.seller.name)
+                setSellerName(user.name);
                 setSellerLogo(user.seller.logo);
                 setSellerDescription(user.seller.description);
             }
@@ -112,7 +115,7 @@ const ProfilePage = () => {
                                                 type="text"
                                                 placeholder="Enter Seller Name"
                                                 value={sellerName}
-                                                onChange={(e) => setSellerName(e.target.value)}
+                                                onChange={(event) => setSellerName(event.target.value)}
                                             ></input>
                                         </div>
                                         <div>
@@ -122,7 +125,7 @@ const ProfilePage = () => {
                                                 type="text"
                                                 placeholder="Enter Seller Logo"
                                                 value={sellerLogo}
-                                                onChange={(e) => setSellerLogo(e.target.value)}
+                                                onChange={(event) => setSellerLogo(event.target.value)}
                                             ></input>
                                         </div>
                                         <div>
@@ -132,7 +135,7 @@ const ProfilePage = () => {
                                                 type="text"
                                                 placeholder="Enter Seller Description"
                                                 value={sellerDescription}
-                                                onChange={(e) => setSellerDescription(e.target.value)}
+                                                onChange={(event) => setSellerDescription(event.target.value)}
                                             ></input>
                                         </div>
                                     </>

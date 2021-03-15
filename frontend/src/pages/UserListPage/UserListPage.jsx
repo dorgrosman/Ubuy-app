@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteUser, listUsers } from '../../actions/UserActions';
 import LoadingBox from '../../cmps/LoadingBox/LoadingBox';
-import MessageBox from '../../cmps/MassageBox/MassageBox';
-import MassageBox from './../../cmps/MassageBox/MassageBox';
+import MassageBox from '../../cmps/MassageBox/MassageBox';
+
 import { USER_DETAILS_RESET } from '../../constants/UseConstants';
 
 export default function UserListPage(props) {
@@ -34,12 +34,12 @@ export default function UserListPage(props) {
       {loadingDelete && <LoadingBox></LoadingBox>}
       {errorDelete && <MassageBox variant="danger">{errorDelete}</MassageBox>}
       {successDelete && (
-        <MessageBox variant="success">User Deleted Successfully</MessageBox>
+        <MassageBox variant="success">User Deleted Successfully</MassageBox>
       )}
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
-        <MessageBox variant="danger">{error}</MessageBox>
+        <MassageBox variant="danger">{error}</MassageBox>
       ) : (
             <table className="table">
               <thead>

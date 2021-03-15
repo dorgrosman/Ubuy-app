@@ -7,6 +7,7 @@ import LoadingBox from './../../cmps/LoadingBox/LoadingBox';
 
 const OrderListPage = (props) => {
     const sellerMode = props.match.path.indexOf('/seller') >= 0;
+    // console.log('sellerMode:', sellerMode)
     const orderList = useSelector(state => state.orderList);
     const { loading, error, orders } = orderList
     const orderDelete = useSelector(state => state.orderDelete)
@@ -18,10 +19,10 @@ const OrderListPage = (props) => {
 
 
     useEffect(() => {
-
-        if (successDelete){ /////////
-            dispatch({ type: ORDER_DELETE_RESET })
-        }  /////////
+        dispatch({ type: ORDER_DELETE_RESET });
+        // if (successDelete){ /////////
+        //     dispatch({ type: ORDER_DELETE_RESET })
+        // }  /////////
 
         dispatch(listOrders({ seller: sellerMode ? userInfo._id : '' }));
   }, [dispatch, sellerMode, successDelete, userInfo._id]);
@@ -56,6 +57,7 @@ const OrderListPage = (props) => {
                                 </thead>
                                 <tbody>
                                     {orders.map((order) => (
+                                        
                                         <tr key={order._id}>
                                             <td>{order._id}</td>
                                             <td>{order.user.name}</td>
@@ -64,7 +66,6 @@ const OrderListPage = (props) => {
                                             <td>{order.totalPrice.toFixed(2)}</td>
                                             <td>{order.isPaid ? order.paidAt.substring(0, 10) : 'No'}</td>
                                             <td>
-                                                {console.log('order.isDeliver:', order.deliveredAt)}
                                                 {/* {order.isDelivered
                                                     ? order.deliveredAt.substring(0, 10)
                                                     : 'No'} */}

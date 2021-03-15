@@ -7,6 +7,7 @@ import { PRODUCT_CREATE_RESET ,PRODUCT_DELETE_RESET } from './../../constants/pr
 
 const ProductListPage = (props) => {
     const sellerMode = props.match.path.indexOf('/seller') >= 0;
+    console.log('sellerMode:', sellerMode)
     const productList = useSelector(state => state.productList)
     const { loading, error, products } = productList;
     const productCreate = useSelector(state => state.productCreate)

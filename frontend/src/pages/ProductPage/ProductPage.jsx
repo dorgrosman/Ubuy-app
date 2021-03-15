@@ -37,6 +37,19 @@ const ProductPage = (props) => {
             <div className="col-2"><img src={product.img} className="large" alt="product" /></div>
             <div className="col-1  small-card-details">
               <ul className="clean">
+                <li>
+                  Seller{' '}
+                  <h2>
+                    {console.log('product',product)}
+                    <Link to={`/seller/${product.seller}`}>
+                      {/* {product.seller.seller.name} */}
+                    </Link>
+                  </h2>
+                  {/* <Rating
+                    rating={product.seller.seller.rating}
+                    numReviews={product.seller.seller.numReviews}
+                  ></Rating> */}
+                </li>
                 <li><h1>{product.name}</h1></li>
                 <li><Rating rating={product.rating} numReviews={product.numReviews} /></li>
                 <li>Price : {product.price} $</li>

@@ -7,9 +7,14 @@ import Product from './../models/ProductModle.js';
 const ProductRouter = express.Router();
 
 ProductRouter.get('/', expressAsyncHandler(async (req, res) => {
+    const name = req.query.name || '';
     const seller = req.query.seller || '';
+    const nameFilter = name ? { name:{$regex: name, $options:'i'}} : {};
     const sellerFilter = seller ? { seller } : {};
-    const products = await Product.find({ ...sellerFilter });
+    const products = await Product.find({ ...sellerFilter, ...nameFilter}).populate(
+        'seller',
+        'seller.name seller.logo'
+      );
     res.send(products)
 }));
 
@@ -17,7 +22,6 @@ ProductRouter.get(
     '/seed',
     expressAsyncHandler(async (req, res) => {
         await Product.remove({});
-        // console.log('data.users:', data.products)
         const createdProducts = await Product.insertMany(data.products);
         res.send({ createdProducts });
     })
@@ -39,7 +43,7 @@ ProductRouter.post(
     isSellerOrAdmin,
     expressAsyncHandler(async (req, res) => {
         const product = new Product({
-            name: 'sample name ' + Date.now(),
+            name: 'sample name ', // + Date.now(),//
             seller: req.user._id,
             img: '../assets/img/whit-T-shirt.jpeg',
             price: 0,
@@ -79,7 +83,10 @@ ProductRouter.delete(
     // isAdmin,
     isSellerOrAdmin,
     expressAsyncHandler(async (req, res) => {
-        const product = await Product.findById(req.params.id);
+        const product = await Product.findById(req.params.id).populate(
+            'seller',
+            'seller.name seller.logo seller.rating seller.numReviews'
+          );
         if (product) {
             const deleteProduct = await product.remove();
             res.send({ message: 'Product Deleted', product: deleteProduct });
