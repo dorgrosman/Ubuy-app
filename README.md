@@ -31,7 +31,6 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### 
 
 
-
 #### Cart & Payment:
 * You can add and delete products from the shopping cart.
 * When you click on the item, you can see the details on it, and also add the item to your shopping cart.
@@ -45,13 +44,14 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 * The admin can also confirm orders, delete users, etc.
 <img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111382127-3fa35680-86af-11eb-9894-d44cadca0337.JPG" />
 
+
 #### Mobile:
 * The site is responsive and adapted to all devices with a customized menu.
 
-<img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" />   <img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />
+<img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" />   &nbsp;&nbsp<img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />
 
-
-
+</br>
+</br>
 
 ## Bild with
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
