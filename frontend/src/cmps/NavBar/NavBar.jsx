@@ -30,10 +30,10 @@ export default function NavBar() {
                     <Route render={({ history }) => <SearchBox history={history}></SearchBox>} />
                 </div>
 
-                <span className="navBtn"  onClick={()=> toggleNavMobile(!navMobile)}><i className={`fa fa-${navMobile?'times':'bars'}`}></i></span>
+                <span className="navBtn "  onClick={()=> toggleNavMobile(!navMobile)}><i className={`fa fa-${navMobile?'times':'bars'}`}></i></span>
 
                 <div>
-                    <div className="navBar" style={{display: navMobile && 'flex'}}>
+                    <div className="navBar align-center" style={{display: navMobile && 'flex'}}>
                         <Link to="/home">Home</Link>
                         <Link to="/cart">Cart
                          {cartItems.length > 0 && (<span className="badge">{cartItems.length}</span>)}
