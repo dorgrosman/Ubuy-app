@@ -40,7 +40,6 @@ const ProductPage = (props) => {
                 <li>
                   Seller{' '}
                   <h2>
-                    {console.log('product',product)}
                     <Link to={`/seller/${product.seller}`}>
                       {/* {product.seller.seller.name} */}
                     </Link>

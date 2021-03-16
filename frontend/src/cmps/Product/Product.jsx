@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     const { product } = props
-    // console.log('product:', product)
-    
     
     return (
         <div key={product._id} className="card">

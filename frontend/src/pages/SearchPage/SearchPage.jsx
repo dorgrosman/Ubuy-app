@@ -47,7 +47,6 @@ export default function SearchPage(props) {
                   )}
                   <div className="row center">
                     {products.map((product) => (
-                    //   console.log('product:', product.img)
                       <Product key={product._id} product={product}></Product>
                     ))}
                   </div>

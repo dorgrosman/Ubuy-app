@@ -19,7 +19,6 @@ const upload = multer({ storage });
 
 uploadRouter.post('/', isAuth, upload.single('img'), (req, res) => {
   res.send(`/${req.file.path}`);
-  console.log('req.file.path:', req.file.path)
 });
 
 export default uploadRouter;

@@ -12,7 +12,6 @@ import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from './../../constants/orderCon
 const OrderPage = (props) => {
     const orderId = props.match.params.id;
     const [sdkReady, setSdkReady] = useState(false);
-    console.log('sdkReadyaaaaaaaaaa:', sdkReady)
     const orderDetails = useSelector(state => state.orderDetaile);
 
     const userSignin = useSelector(state => state.userSignin);
@@ -182,7 +181,6 @@ const OrderPage = (props) => {
                                     </li>
                                     {!order.isPaid && (
                                         <li>
-                                            {console.log('sdkReady:', sdkReady)}
                                             { !sdkReady ? (
                                                 <LoadingBox></LoadingBox>
                                             ) : (

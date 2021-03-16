@@ -7,7 +7,6 @@ import LoadingBox from './../../cmps/LoadingBox/LoadingBox';
 
 const OrderListPage = (props) => {
     const sellerMode = props.match.path.indexOf('/seller') >= 0;
-    // console.log('sellerMode:', sellerMode)
     const orderList = useSelector(state => state.orderList);
     const { loading, error, orders } = orderList
     const orderDelete = useSelector(state => state.orderDelete)

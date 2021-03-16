@@ -127,7 +127,6 @@ export default ShippingAddressPage
 //       dispatch(
 //         saveShippingAddress({ fullName, address, city, postalCode, country })
 //       );
-//       console.log('shippingAddress:', shippingAddress)
 //       props.history.push('/payment');
 //     };
 //     return (

@@ -31,9 +31,6 @@ const ProfilePage = () => {
             setName(user.name);
             setEmail(user.email);
             if (user.seller) {
-                console.log('user:', user)
-                console.log('user.seller:', user.seller)
-                console.log('user.seller.name:', user.seller.name)
                 setSellerName(user.name);
                 setSellerLogo(user.seller.logo);
                 setSellerDescription(user.seller.description);
