@@ -25,7 +25,15 @@ Home page:
 
 Product Details:
 * When you click on the item, you can see the details on it, and also add the item to your shopping cart.
-<img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
+<img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
+
+Cart:
+* You can add and delete products from the shopping cart.
+<img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" />
+
+Payment:
+* You can choose to pay via paypal or via a regular credit card
+<img text-align="center" width="500px" src="https://user-images.https://user-images.githubusercontent.com/71778859/111374368-b4719300-86a5-11eb-954f-2506c42c0e1c.JPG" />
 
 
 ## Bild with
