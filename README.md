@@ -15,6 +15,12 @@ Home page:
 * At the top of the site is a navbar with options available to you.
  <img align="center"  width="500px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
 
+ NavBar:
+* The navbar navigates you on the site and stays fixed in that page on the site.
+* The navbar has a menu for user, seller and admin.
+ <img align="center"  width="150px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" />
+ <img align="center"  width="150px" src="https://user-images.githubusercontent.com/71778859/111371891-a66e4300-86a2-11eb-87f9-5efe70e7ee7b.png" />
+ <img align="center"  width="150px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" />
  
 
 ## Bild with
