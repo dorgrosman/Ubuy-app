@@ -35,8 +35,9 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Cart & Payment:
 * You can add and delete products from the shopping cart.
 * When you click on the item, you can see the details on it, and also add the item to your shopping cart.
-* You can choose to pay via pay-pal or via a regular credit card
-<img text-align="center" width="300px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" /><img text-align="center" width="300px" src="https://user-images.githubusercontent.com/71778859/111374486-d8cd6f80-86a5-11eb-9170-3025573364ae.JPG" />
+* You can choose to pay via pay-pal or via a regular credit card.
+
+<img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" /><img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374486-d8cd6f80-86a5-11eb-9170-3025573364ae.JPG" />
 
 
 #### Admin:
@@ -46,9 +47,9 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 
 #### Mobile:
 * The site is responsive and adapted to all devices with a customized menu.
-<div class="flex">
-<img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" /><img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />
-</div>
+
+<img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" />   <img text-align="center" height="500px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />
+
 
 
 
