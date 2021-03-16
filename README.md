@@ -10,12 +10,12 @@
 Built an Amazon-style marketplace for an e-commerce website called “U-Buy”. 
 
 ## Description
-Home page: 
+### Home page: 
 * All items are displayed on the home page, and by clicking on the item itself, you can enter the item details.
 * At the top of the site is a navbar with options available to you.
  <img style="text-align: center;"  width="500px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
 
- NavBar:
+#### NavBar:
 * The navbar navigates you on the site and stays fixed in that page on the site.
 * The navbar has a menu for user, seller and admin.
  <img style="text-align: center;"  width="250px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" />
@@ -23,7 +23,7 @@ Home page:
  <img text-align="center" width="250px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" />
  
 
-Product Details:
+##### Product Details:
 * When you click on the item, you can see the details on it, and also add the item to your shopping cart.
 <img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
 
