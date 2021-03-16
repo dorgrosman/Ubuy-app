@@ -18,9 +18,9 @@ Home page:
  NavBar:
 * The navbar navigates you on the site and stays fixed in that page on the site.
 * The navbar has a menu for user, seller and admin.
- <img style="text-align: center;"  width="200px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" />
- <img style="text-align: center;"  width="200px" src="https://user-images.githubusercontent.com/71778859/111372495-60fe4580-86a3-11eb-953b-09122f5d3042.png" />
- <img text-align="center" width="200px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" />
+ <img style="text-align: center;"  width="300px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" />
+ <img style="text-align: center;"  width="300px" src="https://user-images.githubusercontent.com/71778859/111372495-60fe4580-86a3-11eb-953b-09122f5d3042.png" />
+ <img text-align="center" width="300px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" />
  
 
 ## Bild with
