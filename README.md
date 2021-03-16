@@ -48,7 +48,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Mobile:
 * The site is responsive and adapted to all devices with a customized menu.
 
-<img text-align="center" height="500px" width="263px"; src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/111383570-14ba0200-86b1-11eb-97fe-a888d8832e2d.png" />
+<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/111375412-e0414880-86a6-11eb-989b-f99a06be3f23.JPG" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/111375444-eb947400-86a6-11eb-83ae-3c81baae6892.png" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/111383570-14ba0200-86b1-11eb-97fe-a888d8832e2d.png" />
 
 </br>
 </br>
