@@ -9,11 +9,11 @@
 ## Site
 Built an Amazon-style marketplace for an e-commerce website called “U-Buy”. 
 
-## Discription
+## Description
 Home page: 
 * All items are displayed on the home page, and by clicking on the item itself, you can enter the item details.
 * At the top of the site is a navbar with options available to you.
- <img align="left"  width="500px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
+ <img align="center"  width="500px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
 
  
 
