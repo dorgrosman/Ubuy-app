@@ -13,7 +13,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Home page: 
 * All items are displayed on the home page, and by clicking on the item itself, you can enter the item details.
 * At the top of the site is a navbar with options available for you.
- <img style="text-align: center;"  width="500px"   width="700px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
+ <img style="text-align: center;"  height="500px"  width="700px" src="https://user-images.githubusercontent.com/71778859/111369774-1cbd7600-86a0-11eb-8be7-aef37507caf7.JPG" />
 
 #### NavBar:
 * The navbar navigates you on the site and stays fixed on that page.
@@ -26,7 +26,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 
 #### Product Details:
 
-<img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
+<img text-align="center" height="500px"  width="700px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
 
 #### 
 
@@ -42,7 +42,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Admin:
 * Admin has the option of adding products, updating and deleting them.
 * The admin can also confirm orders, delete users, etc.
-<img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111382127-3fa35680-86af-11eb-9894-d44cadca0337.JPG" />
+<img text-align="center" height="500px"  width="700px" src="https://user-images.githubusercontent.com/71778859/111382127-3fa35680-86af-11eb-9894-d44cadca0337.JPG" />
 
 
 #### Mobile:
