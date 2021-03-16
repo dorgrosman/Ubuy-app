@@ -32,8 +32,8 @@ Cart:
 <img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" />
 
 Payment:
-* You can choose to pay via paypal or via a regular credit card
-<img text-align="center" width="500px" src="https://user-images.https://user-images.githubusercontent.com/71778859/111374368-b4719300-86a5-11eb-954f-2506c42c0e1c.JPG" />
+* You can choose to pay via pay-pal or via a regular credit card
+<img text-align="center" width="500px" src="https://user-images.githubusercontent.com/71778859/111374486-d8cd6f80-86a5-11eb-9170-3025573364ae.JPG" />
 
 
 ## Bild with
