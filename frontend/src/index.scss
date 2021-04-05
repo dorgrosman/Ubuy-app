@@ -456,10 +456,8 @@ img.large {
     color: white;
   }
   .navBar {
-    display: none;
     // display: flex;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
     background-color: rgb(27, 68, 131);
     position: fixed;
     flex-direction: column;
@@ -479,12 +477,38 @@ img.large {
     z-index: 10;
   }
 
-  .navBar a {
-    margin-top: 30px;
+  .navBar a{
+    margin-top: 45px;
+    text-align: center;
+    // border-bottom: 3px solid #f0f0f0;
+    // width: 80%;
+  }
+
+
+  &.link {
+    border-bottom: 3px solid #f0f0f0;
+    width: 80%;
+    padding-bottom: 15px;
+  }
+  .link:hover{
+    border-bottom: 3px solid #f08000;
+    color: #f08000;
+  }
+  .link:active{
+    color: #ddbe32;
+    border-bottom: 3px solid #ddbe32;
+  }
+  .link a:active{
+    color: #ddbe32;
   }
   .navBar .dropdown {
     margin-top: 40px;
+    text-align: center;
+    // border-bottom: 3px solid #f0f0f0;
+    // width: 80%;
   }
+
+
   .menu {
     background-color: transparent;
     border: none;
