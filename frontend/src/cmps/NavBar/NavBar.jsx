@@ -59,7 +59,7 @@ export default function NavBar() {
                         }
                         {userInfo && userInfo.isSeller && (
                             <div className="dropdown link">
-                                <Link to="#admin" onClick={() =>toggleNavMobile(!navMobile)}>
+                                <Link to="#admin" >
                                     Seller <i className="fa fa-caret-down"></i>
                                 </Link>
                                 <ul className="dropdown-content">
@@ -73,7 +73,7 @@ export default function NavBar() {
                             </div>
                         )}
                         {userInfo && userInfo.isAdmin && (
-                            <div className="dropdown link" onClick={() =>toggleNavMobile(!navMobile)}>
+                            <div className="dropdown link" >
                                 <Link to="#admin">
                                     Admin <i className="fa fa-caret-down"></i>
                                 </Link>
