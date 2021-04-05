@@ -441,6 +441,13 @@ img.large {
 }
 
 @media screen and (max-width: 720px) {
+  // .navBtn {
+  //   display: block;
+  //   z-index: 20;
+  //   position: relative;
+  //   font-size: 35px;
+  //   color: white;
+  // }
   .navBtn {
     display: block;
     z-index: 20;
@@ -451,6 +458,8 @@ img.large {
   .navBar {
     display: none;
     // display: flex;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
     background-color: rgb(27, 68, 131);
     position: fixed;
     flex-direction: column;
@@ -459,6 +468,15 @@ img.large {
     right: 0;
     height: 100vh;
     width: 200px;
+
+  }
+
+  &.hide {
+    right: -50%;
+    position: fixed;
+    // display: none;
+    opacity: 0;
+    z-index: 10;
   }
 
   .navBar a {
