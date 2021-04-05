@@ -420,6 +420,7 @@ img.large {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin-top: 0.5rem;
+
 }
 
 .SideDrawer {
@@ -438,6 +439,7 @@ img.large {
 
 .menu {
   display: none;
+  z-index:30;
 }
 
 @media screen and (max-width: 720px) {
@@ -456,6 +458,7 @@ img.large {
     color: white;
   }
   .navBar {
+    display: none;
     // display: flex;
     transition: all 0.5s ease-in-out;
     background-color: rgb(27, 68, 131);
@@ -472,9 +475,9 @@ img.large {
   &.hide {
     right: -50%;
     position: fixed;
-    // display: none;
-    opacity: 0;
-    z-index: 10;
+    display: none;
+    // opacity: 0;
+    // z-index: 10;
   }
 
   .navBar a{
@@ -574,6 +577,8 @@ img.large {
   a.logo {
     font-size: 3rem;
   }
+
+
 }
 
 .Open {
