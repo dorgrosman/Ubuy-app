@@ -230,10 +230,10 @@ img {
 }
 
 img.medium {
-  max-width: 18rem;
+  max-width: 19rem;
   width: 100%;
-  padding: 0.5rem;
-  height: 22rem;
+  // padding: 0.5rem;
+  height: 25rem;
 }
 
 img.small {
@@ -249,14 +249,34 @@ img.large {
 /* Card */
 
 .card {
-  border: 1px black solid;
+  // border: 1px black solid;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  transition: transform 0.24s ease-out;
   background-color: rgb(255, 255, 255);
   border-radius: 0.5rem;
   margin: 1rem;
 }
 
+.card a {
+  color: black;
+ 
+}
+.card p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+ 
+}
+
+.card .title {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
 .card-body {
-  padding: 1rem;
+  // padding: 1rem;16
 }
 .card-body > * {
   margin-bottom: 0.5rem;
@@ -267,7 +287,9 @@ img.large {
 }
 
 .price {
-  font-size: 2rem;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  color: #d01345;
 }
 
 /* Rating */
@@ -486,8 +508,8 @@ img.large {
   &.hide {
     right: -50%;
     position: fixed;
-    display: none;
-    // opacity: 0;
+    // display: none;
+    opacity: 0;
     // z-index: 10;
   }
 
