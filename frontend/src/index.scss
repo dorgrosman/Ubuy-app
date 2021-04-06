@@ -285,10 +285,17 @@ img.large {
 .pre-reviews {
   padding-left: 20px;
 }
-
+.pre-price{
+  color: black;
+  padding-top: 15px;
+  align-items: baseline;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 .price {
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.9rem;
   color: #d01345;
 }
 
