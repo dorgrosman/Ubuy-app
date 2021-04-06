@@ -6,6 +6,8 @@ import MassageBox from './../../cmps/MassageBox/MassageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../../actions/productActions';
 import './HomePage.scss'
+import SearchBox from './../../cmps/SearchBox/SearchBox';
+import { Route } from 'react-router-dom';
 
 
 export default function HomePage() {
@@ -23,6 +25,7 @@ export default function HomePage() {
       <section className="hero flex column align-center justify-center">
         <h1 className="hero-txt head">Buy More, Pay Less</h1>
         <h2 className="hero-txt small">Choose your garment, we'll provide the best product</h2>
+      {/* <Route render={({ history }) => <SearchBox history={history}></SearchBox>} /> */}
   </section>
       {loading ? (
         <LoadingBox></LoadingBox>

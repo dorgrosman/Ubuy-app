@@ -17,7 +17,8 @@ export default function SearchBox(props) {
             name="q"
             id="q"
             onChange={(event) => setName(event.target.value)}
-          ></input>
+            placeholder=" Search for items, brands and inspiration"
+          />
           <button className="primary" type="submit">
             <i className="fa fa-search"></i>
           </button>
