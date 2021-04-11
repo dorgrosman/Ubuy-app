@@ -59,11 +59,15 @@ const Product = (props) => {
         <div key={product._id} className="card" >
             <div className="card-body">
                 <Link to={`/product/${product._id}`} ><img className="medium" src={product.img} alt="product" /></Link>
+                
+                <Link to={`/product/${product._id}`}><p className="title" to={`/product/${product._id}`} >{product.name}</p><Link to={`/product/${product._id}`}><p className="desc" to={`/product/${product._id}`} >{product.description}</p></Link></Link>
+                <div className="flex space-between align-baseline">
+                <p className="pre-price row">Price : <p className="price"> {product.price} $</p></p>
                 <div>
                     <p className="toggle-fav" onClick={(event) => toggleFavHendler(event)}><i className={productFavUpdate?.isFav ? "fas fa-heart" : "far fa-heart"}></i></p>
                 </div>
-                <Link to={`/product/${product._id}`}><p className="title" to={`/product/${product._id}`} >{product.name}</p><Link to={`/product/${product._id}`}><p className="desc" to={`/product/${product._id}`} >{product.description}</p></Link></Link>
-                <p className="pre-price row">Price : <p className="price"> {product.price} $</p></p>
+
+                </div>
                 {/* <Rating
                     rating={product.rating}
                     numReviews={product.numReviews} /> */}

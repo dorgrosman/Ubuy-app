@@ -316,6 +316,7 @@ img.large {
 }
 .price {
   padding-top: 10px;
+  padding-left: 15px;
   font-weight: bold;
   font-size: 1.9rem;
   color: #d01345;
@@ -697,6 +698,9 @@ img.large {
 }
 .space-around {
   justify-content: space-around;
+}
+.align-baseline {
+  align-items: baseline;
 }
 .justify-center {
   justify-content: center;
