@@ -14,21 +14,27 @@ export default function HomePage() {
 
   const dispatch = useDispatch();
   const productList = useSelector(state => state.productList);
+  // const pro111ductList = useSelector(state => console.log('state.productList:', state));
+  
+  
   const { loading, error, products } = productList;
+  // console.log('products:', products)
 
   useEffect(() => {
     dispatch(listProducts({}));
-  }, [dispatch]);
+  }, []);
 
   return (
     <div>
       <section className="hero flex column align-center justify-center">
         <h1 className="hero-txt head">Buy More, Pay Less</h1>
         <h2 className="hero-txt small">Choose your garment, we'll provide the best product</h2>
-      {/* <Route render={({ history }) => <SearchBox history={history}></SearchBox>} /> */}
-  </section>
+        {/* <Route render={({ history }) => <SearchBox history={history}></SearchBox>} /> */}
+      </section>
+      {/* {console.log('loading:', loading)} */}
       {loading ? (
-        <LoadingBox></LoadingBox>
+        null
+        // <LoadingBox></LoadingBox>
       ) : error ? (
         <MassageBox variant="danger">{error}</MassageBox>
       ) : products ? (

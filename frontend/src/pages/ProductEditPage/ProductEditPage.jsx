@@ -15,9 +15,12 @@ const ProductEditPage = (props) => {
     const [brand, setBrand] = useState('')
     const [countInStock, setCountInStock] = useState('')
     const [description, setDescription] = useState('')
+    const [isFav, setIsFav] = useState('')
 
     const dispatch = useDispatch();
     const productDetails = useSelector((state) => state.productDetails);
+    // const productDetail = useSelector((state) => console.log('state:', state.productDetails ));
+    
     const { loading, error, product } = productDetails
 
 
@@ -45,11 +48,13 @@ const ProductEditPage = (props) => {
             setCountInStock(product.countInStock)
             setBrand(product.brand)
             setDescription(product.description)
+            setIsFav(product.isFav)
 
         }
     }, [product, dispatch, productId, successUpdate, props.history])
 
     const submitHendler = (event) => {
+        console.log('event:', event)
         event.preventDefault()
         dispatch(productUpdate({
             _id: productId,
@@ -59,7 +64,8 @@ const ProductEditPage = (props) => {
             category,
             countInStock,
             brand,
-            description
+            description,
+            isFav
         }))
 
     }

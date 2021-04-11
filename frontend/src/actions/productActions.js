@@ -23,6 +23,7 @@ export const listProducts = ({ seller = '',name='' }) => async (dispatch) => {
     });
     try {
         const { data } = await Axios.get(`/api/products?seller=${seller}&name=${name}`);
+        // console.log('data:', data)
         dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message })
@@ -77,8 +78,8 @@ export const productUpdate = (product) => async (dispatch, getState) => {
             },
         })
         dispatch({
-            type: PRODUCT_UPDATE_SUCCESS
-            , payload: data
+            type: PRODUCT_UPDATE_SUCCESS,
+            payload: data
         })
     } catch (error) {
         const message =
@@ -90,6 +91,29 @@ export const productUpdate = (product) => async (dispatch, getState) => {
 }
 
 export const deleteProduct = (productId) => async (dispatch, getState) => {
+    dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId })
+    const {
+        userSignin: { userInfo },
+    } = getState();
+    try{
+        const { data } = await Axios.delete(`/api/products/${productId}`, {
+            headers: {
+                Authorization: `Bearer ${userInfo.token}`,
+            },
+        })
+        dispatch({
+            type: PRODUCT_DELETE_SUCCESS
+        })
+    }catch(error){
+        const message =
+            error.response && error.response.data.message
+                ? error.response.data.message
+                : error.message;
+        dispatch({ type: PRODUCT_DELETE_FAIL, payload: message });
+    }
+
+}
+export const favoriteProduct = (productId) => async (dispatch, getState) => {
     dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId })
     const {
         userSignin: { userInfo },

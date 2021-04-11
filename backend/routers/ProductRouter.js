@@ -53,6 +53,7 @@ ProductRouter.post(
             rating: 0,
             numReviews: 0,
             description: 'sample description',
+            isFav:false,
         });
         const createdProduct = await product.save();
         res.send({ message: 'Product Created', product: createdProduct });
@@ -61,6 +62,7 @@ ProductRouter.post(
 
 ProductRouter.put('/:id', isAuth, isAdmin, expressAsyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id)
+    console.log('product:', product)
     if (product) {
         product.name = req.body.name;
         product.price = req.body.price;
@@ -69,6 +71,7 @@ ProductRouter.put('/:id', isAuth, isAdmin, expressAsyncHandler(async (req, res) 
         product.countInStock = req.body.countInStock;
         product.brand = req.body.brand;
         product.description = req.body.description;
+        product.isFav = req.body.isFav;
         const productUpdate = await product.save();
         res.send({ message: 'Product Update', product: productUpdate })
     } else {

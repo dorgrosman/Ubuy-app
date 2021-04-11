@@ -6,7 +6,7 @@ import MassageBox from './../../cmps/MassageBox/MassageBox';
 import Rating from '../../cmps/Rating/Rating'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { detailsProduct } from '../../actions/productActions';
+import { detailsProduct, productUpdate } from '../../actions/productActions';
 
 const ProductPage = (props) => {
   const dispatch = useDispatch();
@@ -23,6 +23,27 @@ const ProductPage = (props) => {
     props.history.push(`/cart/${productId}?qty=${qty}`)
   }
 
+  const toggleFavHendler = (event) => {
+    event.preventDefault()
+    console.log('product.isFav:', product.isFav)
+    product.isFav = !product.isFav
+    console.log('product.isFav:', product.isFav)
+
+
+    dispatch(productUpdate({
+      _id: product._id,
+      name: product.name,
+      price: product.price,
+      img: product.img,
+      category: product.category,
+      countInStock: product.countInStock,
+      brand: product.brand,
+      description: product.description,
+      isFav: product.isFav
+    }))
+
+  }
+
 
   return (
     <div>
@@ -31,8 +52,11 @@ const ProductPage = (props) => {
       ) : error ? (
         <MassageBox variant="danger">{error}</MassageBox>
       ) : product ? (
-        <div>
-          <Link to='/home'>Back to result</Link>
+        <div className="productDetails">
+
+          {/* <div>
+            <p className="toggle-fav" onClick={(event) => toggleFavHendler(event)}><i className={product.isFav ? "fas fa-heart" : "far fa-heart"}></i></p>
+          </div> */}
           <div className="productDetails row top">
             <div className="col-2"><img src={product.img} className="large" alt="product" /></div>
             <div className="col-1  small-card-details">
@@ -84,6 +108,9 @@ const ProductPage = (props) => {
                         </div>
                       </li>
                       <li><button onClick={addToCartHandler} className="primary block " >Add to Cart</button></li>
+                      <div className="Back-to-result" >
+                        <Link to='/home'><i class="fas fa-arrow-left"></i>  Back to result</Link>
+                      </div>
                     </>
                     )
                   }

@@ -8,7 +8,7 @@ body {
   padding: 0;
   height: 100vh;
   font-size: 1.6rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -226,7 +226,7 @@ a.logo {
 /* Image */
 
 img {
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
 }
 
 img.medium {
@@ -250,7 +250,7 @@ img.large {
 
 .card {
   // border: 1px black solid;
-  cursor: pointer;
+
   font-family: "Raleway", sans-serif;
   transition: transform 0.24s ease-out;
   background-color: rgb(255, 255, 255);
@@ -260,14 +260,26 @@ img.large {
 
 .card a {
   color: black;
- 
+  cursor: pointer;
 }
 .card p {
   margin-top: 0px;
   margin-bottom: 0px;
- 
 }
-
+.toggle-fav {
+  // position: absolute;
+  cursor: pointer;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: inline-block;
+  font-size: 1.25em;
+  line-height: 1.25rem;
+  border-radius: 12px;
+  z-index: 30;
+  padding: 0.5rem;
+  color: #2d2d2d;
+  background-color: rgb(199, 198, 198);
+}
 .card .title {
   font-weight: bold;
   margin-top: 0px;
@@ -285,7 +297,7 @@ img.large {
 .pre-reviews {
   padding-left: 20px;
 }
-.pre-price{
+.pre-price {
   color: black;
   padding-top: 15px;
   align-items: baseline;
@@ -299,6 +311,20 @@ img.large {
   color: #d01345;
 }
 
+.productDetails {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.small-card-details {
+  text-align: initial;
+}
+
+.Back-to-result {
+  color: black;
+  font-weight: bold;
+  padding-top: 12px;
+}
 /* Rating */
 
 .rating span {
