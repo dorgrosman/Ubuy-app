@@ -516,6 +516,7 @@ img.large {
   }
   .search button {
     height: 35px;
+    
   }
   header .navIcon{
     font-size: 20px;
@@ -541,7 +542,7 @@ img.large {
   .search input {
     width: 13.5rem;
   }
-
+  
   .navBtn {
     display: block;
     z-index: 20;
@@ -655,9 +656,10 @@ img.large {
   .search input {
     width: 12rem;
   }
-
   .search button {
-    height: 32px;
+    // height: 32px;
+    padding-top: 5px;
+    height: 27px;
     width: 34px;
   }
   .search input {
