@@ -36,14 +36,14 @@ export default function NavBar() {
                 </a>
                 <div>
                     <div className={`${navMobile ? 'navBar' : 'hide'} align-center`} style={{ display: navMobile && 'flex' }}>
-                        <Link className='link' to="/home" onClick={() =>toggleNavMobile(!navMobile)}>Home</Link>
-                        <Link className='link' to="/cart" onClick={() =>toggleNavMobile(!navMobile)}>Cart
+                        <Link className='link' to="/home" onClick={() =>toggleNavMobile(!navMobile)}><i className="fas fa-home navIcon"></i></Link>
+                        <Link className='link' to="/cart" onClick={() =>toggleNavMobile(!navMobile)}><i className="fas fa-shopping-cart navIcon"></i>
                          {cartItems.length > 0 && (<span className="badge">{cartItems.length}</span>)}
                         </Link>
                         {
                             userInfo ?
                                 <div className="dropdown link">
-                                    <Link to="#">{userInfo.name} <i className="fa fa-caret-down"></i>{' '}</Link>
+                                    <Link to="#"><i className="far fa-user navIcon"></i> {userInfo.name}<i className="fa fa-caret-down a"></i>{' '}</Link>
                                     <ul className="dropdown-content ">
                                         <Link to="/home" onClick={signoutHandler}>Sign Out</Link>
                                         <li>
@@ -54,12 +54,12 @@ export default function NavBar() {
                                         </li>
                                     </ul>
                                 </div>
-                                : <Link to="/SignIn" onClick={() =>toggleNavMobile(!navMobile)}>Sign In</Link>
+                                : <Link to="/SignIn" onClick={() =>toggleNavMobile(!navMobile)}><i class="fas fa-sign-in-alt navIcon"></i></Link>
                         }
                         {userInfo && userInfo.isSeller && (
                             <div className="dropdown link">
                                 <Link to="#admin" >
-                                    Seller <i className="fa fa-caret-down"></i>
+                                <i class="fas fa-store navIcon"></i> Seller <i className="fa fa-caret-down"></i>
                                 </Link>
                                 <ul className="dropdown-content">
                                     <li>
@@ -74,7 +74,7 @@ export default function NavBar() {
                         {userInfo && userInfo.isAdmin && (
                             <div className="dropdown link" >
                                 <Link to="#admin">
-                                    Admin <i className="fa fa-caret-down"></i>
+                                <i class="fas fa-users-cog navIcon"></i>      (Admin) <i className="fa fa-caret-down"></i>
                                 </Link>
                                 <ul className="dropdown-content">
                                     <li>

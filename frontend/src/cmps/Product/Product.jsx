@@ -18,12 +18,13 @@ const Product = (props) => {
     // console.log('productFavUpdates:', productFavUpdates)
     // const productFavUpdate =useSelector(state => state.updateProduct.product.product)
     const productFavUpdate =useSelector(state => state.updateProduct.product.product)
+    // const productFavUpdate1 =useSelector(state => state.updateProduct.product)
     
-    // console.log('productFavUpdate:', productFavUpdate)
+    // console.log('productFavUpdate:', productFavUpdate1)
 
     const [isFav, setIsFav] = useState('')
     const dispatch = useDispatch();
-    // const productDetails = useSelector(state => state.productDetails)
+    const productDetails = useSelector(state => state.productDetails)
     // console.log('productDetails:', productDetails)
     // const { loading, error, product } = productDetails
     // console.log('product:', product)
@@ -58,9 +59,9 @@ const Product = (props) => {
         <div key={product._id} className="card" >
             <div className="card-body">
                 <Link to={`/product/${product._id}`} ><img className="medium" src={product.img} alt="product" /></Link>
-                {/* <div>
+                <div>
                     <p className="toggle-fav" onClick={(event) => toggleFavHendler(event)}><i className={productFavUpdate?.isFav ? "fas fa-heart" : "far fa-heart"}></i></p>
-                </div> */}
+                </div>
                 <Link to={`/product/${product._id}`}><p className="title" to={`/product/${product._id}`} >{product.name}</p><Link to={`/product/${product._id}`}><p className="desc" to={`/product/${product._id}`} >{product.description}</p></Link></Link>
                 <p className="pre-price row">Price : <p className="price"> {product.price} $</p></p>
                 {/* <Rating

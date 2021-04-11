@@ -19,7 +19,7 @@ export default function SearchBox(props) {
             onChange={(event) => setName(event.target.value)}
             placeholder=" Search for items, brands and inspiration"
           />
-          <button className="primary" type="submit">
+          <button className="" type="submit">
             <i className="fa fa-search"></i>
           </button>
         </div>

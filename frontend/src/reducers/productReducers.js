@@ -67,39 +67,27 @@ export const productCreateReducer = (state = {}, action) => {
             return state
     }
 }
-export const productUpdateReducer = (state = { product: [] }, action) => {
-
-    // console.log('producttt:', state.product)
-    // console.log('state:', state)
-    const item = action.payload;
-
+export const productUpdateReducer = (state = { product: [] ,favProduct:[] }, action) => {
     switch (action.type) {
         case PRODUCT_UPDATE_REQUEST:
             return { ...state, product: action.payload, loading: true };
         case PRODUCT_UPDATE_SUCCESS:
+            const item = action.payload;
+            console.log('item:', item)
             const updateProduct = [state.product]
             // console.log('updateProduct:', updateProduct)
+            // const selectedProduct = updateProduct.find(p => p.id === item._id)
             const selectedProduct = updateProduct.find(p => p.id === item._id)
-            // console.log('selectedProduct:', selectedProduct)
-            const isExisted = updateProduct.includes(selectedProduct)
-            // console.log('isExisted:', isExisted)
-
-            // console.log('isExisted:', isExisted)
-            if (isExisted) {
+            console.log('selectedProduct:', selectedProduct)
+            if (selectedProduct.isFav) {
                 // const updatedFavProducts = state.product.filter(p => p.id === item._id)
                 // updateProduct.push({ product: selectedProduct} )
-                // const updatedFavProducts = state.product.filter(p => console.log('p',p))
-                // return {
-                //     ),
-                // }
-                // updateProduct.push({ product: selectedProduct })
-                
                 // console.log('updateProduct:', updateProduct)
                 // return { ...state, product: action.payload, loading: false, success: true };
                 // return { ...state, product: updateProduct, loading: false, success: true };
-                return { ...state, product: action.payload, loading: false, success: true };
+                return { ...state, product: selectedProduct , loading: false, success: true };
             } else {
-                return { ...state, product: action.payload, loading: false, success: true };
+                return { ...state, product: selectedProduct , loading: false, success: true };
                 // return { ...state, product: action.payload, loading: false, success: true };
             }
         case PRODUCT_UPDATE_FAIL:
@@ -126,3 +114,14 @@ export const productDeleteReducer = (state = {}, action) => {
             return state
     }
 }
+
+// export const productFavUpdateReducer = (state = { favProduct: [] }, action) => {
+
+
+//     switch (action.type) {
+//         case PRODUCT_UPDATE_REQUEST:
+//             // return { ...state, product: action.payload, loading: true };
+//         default:
+//             return state
+//     }
+// }

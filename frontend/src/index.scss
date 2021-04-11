@@ -177,6 +177,11 @@ header a {
   padding: 1rem;
 }
 
+header .navIcon {
+font-size: 25px;
+padding-right: 20px;
+}
+
 a.logo {
   font-family: inherit;
   color: white;
@@ -449,12 +454,14 @@ img.large {
 
 .search button {
   border-radius: 0 3.5rem 3.5rem 0;
+  background-color: #ffffff;
+  border-left: 0;
   border-right: none;
   margin-left: none;
 }
 .search input {
   border-radius: 3.5rem 0 0 3.5rem;
-  width: 42.5rem;
+  width: 38.5rem;
   border-right: none;
   margin-left: 0.5rem;
 }
@@ -501,19 +508,38 @@ img.large {
   display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1120px) {
   .search input {
     width: 25.5rem;
+    // height: 30px;
+    padding: 7.5px;
+  }
+  .search button {
+    height: 35px;
+  }
+  header .navIcon{
+    font-size: 20px;
+    padding-right: 20px;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 960px) {
+  header .navIcon{
+    font-size: 17.5px;
+    padding-right: 0px;
+  }
+}
+  @media screen and (max-width: 835px) {
   .search input {
-    width: 17.5rem;
+    width: 15.5rem;
+  }
+  header .navIcon{
+    font-size: 17.5px;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 745px) {
   .search input {
-    width: 15.5rem;
+    width: 13.5rem;
   }
 
   .navBtn {
