@@ -6,11 +6,13 @@ import './Product.scss'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { productUpdate } from '../../actions/productActions';
-import { listProducts } from './../../actions/productActions';
+// import { listProducts } from './../../actions/productActions';
+// import { listProducts } from '../../style/img/';
 
 
 const Product = (props) => {
     const { product } = props
+    
     
     // console.log('product:', product)
     // const productFavUpdates =useSelector(state => console.log('state.updateProduct.product:', state.updateProduct.product))
@@ -58,7 +60,8 @@ const Product = (props) => {
     return (
         <div key={product._id} className="card" >
             <div className="card-body">
-                <Link to={`/product/${product._id}`} ><img className="medium" src={product.img} alt="product" /></Link>
+                {console.log('product.img:', product.img)}
+                <Link to={`/product/${product._id}`} ><img className="medium" src={product.img}  alt="product" /></Link>
                 
                 <Link to={`/product/${product._id}`}><p className="title" to={`/product/${product._id}`} >{product.name}</p><Link to={`/product/${product._id}`}><p className="desc" to={`/product/${product._id}`} >{product.description}</p></Link></Link>
                 <div className="flex space-between align-baseline">

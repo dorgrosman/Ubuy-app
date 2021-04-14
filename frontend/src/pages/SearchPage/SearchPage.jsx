@@ -11,6 +11,7 @@ export default function SearchPage(props) {
     const dispatch = useDispatch();
     const productList = useSelector(state => state.productList);
     const { error, loading, products } = productList
+    console.log('products:', products)
 
     useEffect(() => {
         dispatch(listProducts({ name: name !== 'all' ? name : '' }))
@@ -46,7 +47,7 @@ export default function SearchPage(props) {
                     <MassageBox>No Product Found</MassageBox>
                   )}
                   <div className="row center">
-                    {products.map((product) => (
+                    {products.map((product) => ( 
                       <Product key={product._id} product={product}></Product>
                     ))}
                   </div>

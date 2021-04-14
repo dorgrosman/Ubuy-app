@@ -46,6 +46,7 @@ ProductRouter.post(
             name: 'sample name ', // + Date.now(),//
             seller: req.user._id,
             img: '../assets/img/whit-T-shirt.jpeg',
+            // img: '../style/img/red-set.jpeg',
             price: 0,
             category: 'sample category',
             brand: 'sample brand',
