@@ -489,9 +489,16 @@ img.large {
 }
 .search input {
   border-radius: 3.5rem 0 0 3.5rem;
-  // width: 38.5rem;
+  width: 40rem;
+  font-size: 1.3rem;
   border-right: none;
   margin-left: 0.5rem;
+}
+.search input:hover {
+  // background-color: #606060;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08), 0 6px 9px 0 rgba(0,0,0,0.08), 0 8px 27px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.4s ease-out;
+  // box-shadow: 0 4px 4px 0 rgba(0,0,0,0.04), 0 6px 9px 0 rgba(0,0,0,0.04), 0 8px 27px 0 rgba(0,0,0,0.04);
 }
 
 .burgerMenu {
