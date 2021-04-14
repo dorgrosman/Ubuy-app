@@ -9,8 +9,7 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   // font-family: "Raleway", sans-serif;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,30 +41,55 @@ li {
 /* Layout */
 
 .grid-container {
+  // max-width: 1020px;
   display: grid;
   grid-template-areas:
     "header"
+    "Hero"
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-rows: -1rem 9rem 1fr 20rem;
+  // grid-template-rows: 0rem 6rem 1fr 20rem;
+
+  // grid-template-rows: 10rem 1fr 20rem;
   height: 100%;
+  // width: 100vw;
+  width: 100vw;
 }
-
+// .grid-container {
+//   grid-template-rows: 10rem 1fr 20rem;
+// }
 header {
-  height: 5.9rem;
-  background-color: rgb(49, 71, 104);
+  height: 8.9rem;
+  background-color: #292929;
+  // margin: 0 auto;
+  // max-width: 1020px;
 }
 
+.main-header {
+  width: 100%;
+  margin: 0 auto;
+  width: 1020px;
+}
 main {
   grid-area: main;
   margin-top: 9px;
+  margin: 0 auto;
+  max-width: 1020px;
 }
-
+.Hero {
+  grid-area: Hero;
+}
 footer {
   grid-area: footer;
-  background-color: rgb(49, 71, 104);
-  color: white;
+  box-shadow: inset 0 1px 0 #e1e0e0;
+  background-color: #f8f8f8;
+  color: #606060;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Common */
@@ -134,7 +158,7 @@ button.small {
   background-image: url("./style/img/hero-store.jpg");
   background-size: cover;
   background-position: bottom;
-  min-height: 75vh;
+  min-height: 59vh;
 
   .hero-txt {
     text-align: center;
@@ -181,8 +205,8 @@ header a {
 }
 
 header .navIcon {
-font-size: 25px;
-padding-right: 20px;
+  font-size: 25px;
+  padding-right: 20px;
 }
 
 a.logo {
@@ -252,7 +276,7 @@ img.small {
 /* @media(){
 } */
 img.large {
-  width: 100%;
+  width: 85%;
   height: 510px;
 }
 /* Card */
@@ -261,10 +285,10 @@ img.large {
   // border: 1px black solid;
 
   // font-family: "Raleway", sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: transform 0.24s ease-out;
   background-color: rgb(255, 255, 255);
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   margin: 1rem;
 }
 
@@ -298,7 +322,7 @@ img.large {
 }
 
 .card-body {
-  // padding: 1rem;16
+  // width: 80%;
 }
 .card-body > * {
   margin-bottom: 0.5rem;
@@ -412,7 +436,7 @@ img.large {
   min-width: 12rem;
   padding: 1rem;
   z-index: 1;
-  background-color: #203040;
+  background-color: #c0c0c0;
   margin: 0;
   margin-top: 0.4rem;
   border-radius: 0.5rem;
@@ -467,7 +491,7 @@ img.large {
 }
 .search input {
   border-radius: 3.5rem 0 0 3.5rem;
-  width: 38.5rem;
+  // width: 38.5rem;
   border-right: none;
   margin-left: 0.5rem;
 }
@@ -513,8 +537,22 @@ img.large {
   z-index: 30;
   display: none;
 }
+.hamburger-menu {
+  padding-left: 210px;
+  z-index: 30;
+}
+
+.opened {
+  display: none;
+}
 
 @media screen and (max-width: 1120px) {
+  .main-header {
+    width: 930px;
+  }
+  main {
+    width: 930px;
+  }
   .search input {
     width: 25.5rem;
     // height: 30px;
@@ -522,33 +560,55 @@ img.large {
   }
   .search button {
     height: 35px;
-    
   }
-  header .navIcon{
+  header .navIcon {
     font-size: 20px;
     padding-right: 20px;
   }
 }
 @media screen and (max-width: 960px) {
-  header .navIcon{
+  .main-header {
+    width: 840px;
+  }
+  main {
+    width: 840px;
+  }
+  header .navIcon {
     font-size: 17.5px;
     padding-right: 0px;
   }
 }
-  @media screen and (max-width: 835px) {
+@media screen and (max-width: 845px) {
+  .main-header {
+    width: 745px;
+  }
+  main {
+    width: 745px;
+  }
   .search input {
     width: 15.5rem;
   }
-  header .navIcon{
+  header .navIcon {
     font-size: 17.5px;
     padding-right: 0;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 775px) {
+  .main-header {
+    width: 675px;
+  }
+  main {
+    width: 675px;
+  }
+  header {
+    height: 6.9rem;
+  }
   .search input {
     width: 13.5rem;
   }
-  
+  .opened {
+    display: block;
+  }
   .navBtn {
     display: block;
     z-index: 20;
@@ -561,7 +621,7 @@ img.large {
     display: none;
     // display: flex;
     transition: all 0.5s ease-in-out;
-    background-color: rgb(27, 68, 131);
+    background-color: #6b6767d2;
     position: fixed;
     flex-direction: column;
     z-index: 10;
@@ -585,7 +645,9 @@ img.large {
     // border-bottom: 3px solid #f0f0f0;
     // width: 80%;
   }
-
+  .hamburger-menu {
+    padding-left: 420px;
+  }
   &.link {
     border-bottom: 3px solid #f0f0f0;
     width: 80%;
@@ -655,7 +717,42 @@ img.large {
   }
 }
 
+@media screen and (max-width: 675px) {
+  .main-header {
+    width: 570px;
+  }
+  main {
+    width: 570px;
+  }
+  .hamburger-menu {
+    padding-left: 280px;
+  }
+}
+
 @media screen and (max-width: 560px) {
+  .main-header {
+    width: 410px;
+  }
+  main {
+    width: 410px;
+  }
+  .hamburger-menu {
+    padding-left: 220px;
+  }
+  .grid-container {
+    // grid-template-rows: 40rem 10rem 1fr 20rem;
+    grid-template-rows: -0.5rem 6rem 1fr 20rem;
+  }
+  .product-page-payment-info {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 170px;
+  }
+  .eighty-percent {
+    width: 80%;
+  }
   .SideDrawer {
     display: none;
   }
@@ -664,7 +761,7 @@ img.large {
   }
   .search button {
     // height: 32px;
-    z-index: 10;
+    // z-index: 10;
     padding-top: 5px;
     height: 27px;
     width: 34px;

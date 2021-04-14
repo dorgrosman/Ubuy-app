@@ -26,6 +26,7 @@ import UserEditPage from './pages/UserEtitPage/UserEtitPage';
 import SellerRoute from './cmps/SellerRouter/SellerRouter';
 import SellerPage from './pages/SellerPage/SellerPage';
 import NavBar from './cmps/NavBar/NavBar';
+import Hero from './cmps/Hero';
 
 
 function App() {
@@ -42,8 +43,11 @@ function App() {
   return (
     <BrowserRouter >
       <div className="grid-container">
-        <NavBar ></NavBar> 
-        
+        {/* <div className="main-layout"> */}
+        <NavBar className="main-header"></NavBar>
+
+        {/* <Hero /> */}
+
         <main>
           <Route path="/seller/:id" component={SellerPage}></Route>
           <Route path="/cart/:id?" component={CartPage} />
@@ -66,7 +70,12 @@ function App() {
           <AdminRoute path="/userlist" component={UserListPage}></AdminRoute>
           <Route path="/home" component={HomePage} />
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="main-footer row center">
+          <div className="flex column align-center">
+            <h2>U-buy</h2>
+            <p>© 2020 U-buy.com - All Rights Reserved</p>
+          </div>
+        </footer>
       </div>
     </BrowserRouter>
   );

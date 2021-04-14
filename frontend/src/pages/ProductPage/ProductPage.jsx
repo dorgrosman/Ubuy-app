@@ -86,8 +86,9 @@ const ProductPage = (props) => {
                 </div>
               </ul >
             </div>
-            <div className="col-1">
-              <div className="card card-body">
+            <div className="col-1 product-page-payment-info">
+              <div className="card card-body eighty-percent">
+                
                 <ul className="clean">
                   <li><div className="row"><div>Price :</div><div className="price "> {product.price} $ </div></div></li>
                   <li><div className="row"><div>Status :</div> {product.countInStock > 0 ? (<span className="success">In Stock</span>) : (<span className="danger" >Unavailable</span>)}</div></li>
@@ -108,12 +109,12 @@ const ProductPage = (props) => {
                         </div>
                       </li>
                       <li><button onClick={addToCartHandler} className="primary block " >Add to Cart</button></li>
-                      <div className="Back-to-result" >
-                        <Link to='/home'><i class="fas fa-arrow-left"></i>  Back to result</Link>
-                      </div>
                     </>
                     )
                   }
+                      <div className="Back-to-result" >
+                        <Link to='/home'><i class="fas fa-arrow-left"></i>  Back to result</Link>
+                      </div>
                 </ul>
               </div>
 

@@ -88,8 +88,8 @@ const PleaseOrderPage = (props) => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-1">
-                    <div className="card card-body">
+                <div className="col-1 flex justify-center ">
+                    <div className="card card-body eighty-percent" >
                         <ul>
                             <li>
                                 <h2>Order Summary</h2>

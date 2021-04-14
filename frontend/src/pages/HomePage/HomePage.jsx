@@ -8,6 +8,7 @@ import { listProducts } from '../../actions/productActions';
 import './HomePage.scss'
 import SearchBox from './../../cmps/SearchBox/SearchBox';
 import { Route } from 'react-router-dom';
+import Hero from './../../cmps/Hero';
 
 
 export default function HomePage() {
@@ -25,13 +26,14 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div>
-      <section className="hero flex column align-center justify-center">
+    <div >
+      
+       <Hero />
+      {/* <section className="hero flex column align-center justify-center">
         <h1 className="hero-txt head">Buy More, Pay Less</h1>
         <h2 className="hero-txt small">Choose your garment, we'll provide the best product</h2>
-        {/* <Route render={({ history }) => <SearchBox history={history}></SearchBox>} /> */}
-      </section>
-      {/* {console.log('loading:', loading)} */}
+      </section> */}
+
       {loading ? (
         null
         // <LoadingBox></LoadingBox>

@@ -78,10 +78,10 @@ const OrderPage = (props) => {
                     <h1>Order Page</h1>
                     <h1>Order {order._id}</h1>
                     <div className="row top">
-                        <div className="col-2">
+                        <div className="col-2 ">
                             <ul>
                                 <li>
-                                    <div className="card card-body">
+                                    <div className="card card-body eighty-percent">
                                         <h2>Shipping</h2>
                                         <p>
                                             <strong>Name:</strong> {order.shippingAddress.fullName} <br />
@@ -100,7 +100,7 @@ const OrderPage = (props) => {
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="card card-body">
+                                    <div className="card card-body eighty-percent">
                                         <h2>Payment</h2>
                                         <p>
                                             <strong>Method:</strong> {order.paymentMethod}
@@ -145,8 +145,8 @@ const OrderPage = (props) => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-1">
-                            <div className="card card-body">
+                        <div className="col-1 flex justify-center">
+                            <div className="card card-body eighty-percent">
                                 <ul>
                                     <li>
                                         <h2>Order Summary</h2>

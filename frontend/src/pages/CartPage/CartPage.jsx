@@ -10,12 +10,8 @@ import './CartPage.scss'
 const CartPage = (props) => {
    const productId = props.match.params.id;
    const qty = props.location.search ? Number(props.location.search.split('=')[1]) : 1;
-
    const cart = useSelector((state) => state.cart)
-
    const { cartItems } = cart
-
-
 
    const dispatch = useDispatch();
 
@@ -79,7 +75,7 @@ const CartPage = (props) => {
             <div className="card card-body">
                <ul>
                   <li>
-                     <h2>
+                     <h2 style={{width: "40rem"}}>
                         Subtotal ({cartItems.reduce((preItem, currItem) => preItem + currItem.qty, 0)} items) : $
                          {cartItems.reduce((preItem, currItem) => preItem + currItem.price * currItem.qty, 0)}
                      </h2>

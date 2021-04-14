@@ -11,7 +11,7 @@ export default function SearchBox(props) {
 
     return (
         <form className="search" onSubmit={submitHandler}>
-        <div className="row">
+        <div className="flex">
           <input
             type="text"
             name="q"
