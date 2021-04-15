@@ -108,7 +108,11 @@ const ProductPage = (props) => {
                           </div>
                         </div>
                       </li>
-                      <li><button onClick={addToCartHandler} className="primary block " >Add to Cart</button></li>
+                      <li>
+                      <div className="multi-button">
+                        <button onClick={addToCartHandler} className="primary block " >Add to Cart</button>
+                        </div>
+                        </li>
                     </>
                     )
                   }

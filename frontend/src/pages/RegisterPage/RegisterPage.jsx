@@ -62,7 +62,7 @@ const RegisterPage = (props) => {
                     <input type="password" id="confirmPassword" placeholder="Confirm password" required
                         onChange={event => setConfirmPassword(event.target.value)} />
                 </div>
-                <div>
+                <div className="multi-button">
                     <label />
                     <button className="primary" type="submit"> Register</button>
                 </div>

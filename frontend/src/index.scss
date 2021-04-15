@@ -124,18 +124,27 @@ button {
 input:hover,
 select:hover,
 textarea:hover,
-button:hover {
-  border: 0.1rem #404040 solid;
-}
-button.primary {
-  background-color: #f0c040;
-}
-button.primary:active {
-  background-color: #fde08f;
-}
+// button:hover {
+//   border: 0.1rem #404040 solid;
+// }
+// button.primary {
+//   background-color: #f0c040;
+// }
+// button.primary:active {
+//   background-color: #fde08f;
+// }
 button.block {
   width: 100%;
 }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
 
 .badge {
   background-color: #f02020;
@@ -248,6 +257,9 @@ a.logo {
 
 .min-30 {
   min-width: 30rem;
+}
+.min-15 {
+  min-width: 15rem;
 }
 
 .p-1 {
@@ -373,9 +385,7 @@ img.large {
 .cart-list:hover {
   background-color: rgb(245, 245, 212);
 }
-.delete-item-from-cart:active {
-  background-color: wheat;
-}
+
 
 /* Alert */
 .loading {
@@ -559,7 +569,7 @@ img.large {
     width: 930px;
   }
   .search input {
-    width: 25.5rem;
+    width: 35.5rem;
     // height: 30px;
     padding: 7.5px;
   }
@@ -590,9 +600,7 @@ img.large {
   main {
     width: 745px;
   }
-  .search input {
-    width: 15.5rem;
-  }
+
   header .navIcon {
     font-size: 17.5px;
     padding-right: 0;
@@ -612,7 +620,7 @@ img.large {
     height: 6.9rem;
   }
   .search input {
-    width: 13.5rem;
+    width: 25.5rem;
   }
   .opened {
     display: block;
@@ -775,11 +783,15 @@ img.large {
     width: 34px;
   }
   .search input {
-    height: 10px;
+    height: 27px;
+    width: 25.5rem;
   }
 
   a.logo {
     font-size: 3rem;
+  }
+  .min-15 {
+    min-width: 0;
   }
 }
 
@@ -818,4 +830,43 @@ img.large {
 }
 .column {
   flex-direction: column;
+}
+
+
+.multi-button {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  button {
+    background: white;
+    border: 0.175em solid black;
+    cursor: pointer;
+    font: 600 1.5rem/1.25 'Montserrat', sans-serif;
+    letter-spacing: 0.175em;
+    margin: 0.5rem;
+    padding: 0.5em 0.75em;
+    position: relative;
+    text-transform: uppercase;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      transition: all 0.125s ease-in-out;
+    }
+    &.primary {
+      &:after {
+        border: 0.175em dashed black;
+        bottom: 0.175em * -1;
+        left: 0.175em * -1;
+        right: 0.175em * -1;
+        top: 0.175em * -1;
+      }
+      &:active:after,
+      &:focus:after {
+        bottom: 0.175em;
+        left: 0.175em;
+        right: 0.175em;
+        top: 0.175em;
+      }
+    }
+  }
 }

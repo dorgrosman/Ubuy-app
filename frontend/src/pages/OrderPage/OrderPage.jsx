@@ -202,13 +202,16 @@ const OrderPage = (props) => {
                                             {errorDeliver && (
                                                 <MassageBox variant="danger">{errorDeliver}</MassageBox>
                                             )}
+                                            <div className="multi-button">
+
                                             <button
                                                 type="button"
                                                 className="primary block"
                                                 onClick={deliverHandler}
-                                            >
+                                                >
                                                 Deliver Order
                                                 </button>
+                                                </div>
                                         </li>
                                     )}
                                 </ul>

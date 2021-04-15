@@ -62,7 +62,10 @@ const ProductListPage = (props) => {
         <div>
             <div className="row">
                 <h1>Products</h1>
+                <div className="multi-button">
+
                 <button type="button" className="primary" onClick={createHendler}>Create Product</button>
+                </div>
             </div>
             {loadingDelete && <LoadingBox></LoadingBox>}
             {errorDelete && <MassageBox variant="danger">{errorDelete}</MassageBox>}

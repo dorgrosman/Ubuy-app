@@ -69,91 +69,91 @@ const ProfilePage = () => {
                 ) : error ? (
                     <MassageBox variant="danger">{error}</MassageBox>
                 ) : (
+                    <>
+                        {loadingUpdate && <LoadingBox></LoadingBox>}
+                        {errorUpdate && (<MassageBox vartiant="danger">{errorUpdate}</MassageBox>)}
+                        {successUpdate && (<MassageBox variant="success">Profile Update Successfully</MassageBox>)}
+                        <div>
+                            <label htmlFor="name">Name</label>
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder="Enter name"
+                                value={name}
+                                onChange={(event) => setName(event.target.value)}
+                            ></input>
+                        </div>
+                        <div>
+                            <label htmlFor="email">Email</label>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Enter email"
+                                value={email}
+                                onChange={(event) => setEmail(event.target.value)}
+                            ></input>
+                        </div>
+                        <div>
+                            <label htmlFor="password">Password</label>
+                            <input
+                                id="password"
+                                type="password"
+                                placeholder="Enter password"
+                                onChange={(event) => setPassword(event.target.value)}
+                            ></input>
+                        </div>
+                        {user.isSeller && (
                             <>
-                                {loadingUpdate && <LoadingBox></LoadingBox>}
-                                {errorUpdate && (<MassageBox vartiant="danger">{errorUpdate}</MassageBox>)}
-                                {successUpdate && (<MassageBox variant="success">Profile Update Successfully</MassageBox>)}
+                                <h2>Seller</h2>
                                 <div>
-                                    <label htmlFor="name">Name</label>
+                                    <label htmlFor="sellerName">Seller Name</label>
                                     <input
-                                        id="name"
+                                        id="sellerName"
                                         type="text"
-                                        placeholder="Enter name"
-                                        value={name}
-                                        onChange={(event) => setName(event.target.value)}
+                                        placeholder="Enter Seller Name"
+                                        value={sellerName}
+                                        onChange={(event) => setSellerName(event.target.value)}
                                     ></input>
                                 </div>
                                 <div>
-                                    <label htmlFor="email">Email</label>
+                                    <label htmlFor="sellerLogo">Seller Logo</label>
                                     <input
-                                        id="email"
-                                        type="email"
-                                        placeholder="Enter email"
-                                        value={email}
-                                        onChange={(event) => setEmail(event.target.value)}
+                                        id="sellerLogo"
+                                        type="text"
+                                        placeholder="Enter Seller Logo"
+                                        value={sellerLogo}
+                                        onChange={(event) => setSellerLogo(event.target.value)}
                                     ></input>
                                 </div>
                                 <div>
-                                    <label htmlFor="password">Password</label>
+                                    <label htmlFor="sellerDescription">Seller Description</label>
                                     <input
-                                        id="password"
-                                        type="password"
-                                        placeholder="Enter password"
-                                        onChange={(event) => setPassword(event.target.value)}
+                                        id="sellerDescription"
+                                        type="text"
+                                        placeholder="Enter Seller Description"
+                                        value={sellerDescription}
+                                        onChange={(event) => setSellerDescription(event.target.value)}
                                     ></input>
-                                </div>
-                                {user.isSeller && (
-                                    <>
-                                        <h2>Seller</h2>
-                                        <div>
-                                            <label htmlFor="sellerName">Seller Name</label>
-                                            <input
-                                                id="sellerName"
-                                                type="text"
-                                                placeholder="Enter Seller Name"
-                                                value={sellerName}
-                                                onChange={(event) => setSellerName(event.target.value)}
-                                            ></input>
-                                        </div>
-                                        <div>
-                                            <label htmlFor="sellerLogo">Seller Logo</label>
-                                            <input
-                                                id="sellerLogo"
-                                                type="text"
-                                                placeholder="Enter Seller Logo"
-                                                value={sellerLogo}
-                                                onChange={(event) => setSellerLogo(event.target.value)}
-                                            ></input>
-                                        </div>
-                                        <div>
-                                            <label htmlFor="sellerDescription">Seller Description</label>
-                                            <input
-                                                id="sellerDescription"
-                                                type="text"
-                                                placeholder="Enter Seller Description"
-                                                value={sellerDescription}
-                                                onChange={(event) => setSellerDescription(event.target.value)}
-                                            ></input>
-                                        </div>
-                                    </>
-                                )}
-                                <div>
-                                    <label htmlFor="confirmPassword">confirm Password</label>
-                                    <input
-                                        id="confirmPassword"
-                                        type="password"
-                                        placeholder="Enter confirm password"
-                                        onChange={(event) => setConfirmPassword(event.target.value)}
-                                    ></input>
-                                </div>
-                                <div>
-                                    <label />
-                                    <button className="primary" type="submit">
-                                        Update
-                  </button>
                                 </div>
                             </>
                         )}
+                        <div>
+                            <label htmlFor="confirmPassword">confirm Password</label>
+                            <input
+                                id="confirmPassword"
+                                type="password"
+                                placeholder="Enter confirm password"
+                                onChange={(event) => setConfirmPassword(event.target.value)}
+                            ></input>
+                        </div>
+                        <div className="multi-button">
+                            <label />
+                            <button className="primary" type="submit">
+                                Update
+                            </button>
+                        </div>
+                    </>
+                )}
             </form>
         </div>
     );

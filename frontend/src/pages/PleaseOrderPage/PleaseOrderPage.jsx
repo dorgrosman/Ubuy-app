@@ -123,6 +123,7 @@ const PleaseOrderPage = (props) => {
                                 </div>
                             </li>
                             <li>
+                            <div className="multi-button">
                                 <button
                                     type="button"
                                     onClick={placeOrderHandler}
@@ -132,6 +133,7 @@ const PleaseOrderPage = (props) => {
                                 >
                                     Place Order
                               </button>
+                              </div>
                             </li>
                             {loading && <LoadingBox></LoadingBox>}
                             {error && <MassageBox varint="danger">{error}</MassageBox>}

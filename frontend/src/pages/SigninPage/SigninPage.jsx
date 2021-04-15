@@ -44,7 +44,7 @@ const SigninPage = (props) => {
                     <input type="password" id="password" plecaeholder="Enter password" required
                         onChange={event => setPassword(event.target.value)} />
                 </div>
-                <div>
+                <div className="multi-button">
                     <label />
                     <button className="primary" type="submit"> Sign In</button>
                 </div>

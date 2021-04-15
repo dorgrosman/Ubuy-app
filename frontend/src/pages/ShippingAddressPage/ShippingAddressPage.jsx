@@ -93,7 +93,7 @@ const ShippingAddressPage = (props) => {
                         required
                     />
                 </div>
-                <div>
+                <div className="multi-button">
                     <label />
                     <button className="primary" type="submit">
                         Continue

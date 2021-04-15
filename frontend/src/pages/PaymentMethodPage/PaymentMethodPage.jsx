@@ -53,7 +53,9 @@ const PaymentMethodPage = (props) => {
                     </div>
                 </div>
                 <div>
-                    <button className="primary" type="submit">Continue</button>
+                    <div className="multi-button">
+                        <button className="primary" type="submit">Continue</button>
+                    </div>
                 </div>
             </form>
         </div>

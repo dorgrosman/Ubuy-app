@@ -180,7 +180,10 @@ const ProductEditPage = (props) => {
                             </div>
                             <div>
                                 <label></label>
+                                <div className="multi-button">
+
                                 <button className="primary" type="submit" >Updata</button>
+                                </div>
                             </div>
                         </>
 

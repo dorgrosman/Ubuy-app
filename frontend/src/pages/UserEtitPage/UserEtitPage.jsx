@@ -99,7 +99,7 @@ export default function UserEditPage(props) {
                 onChange={(e) => setIsAdmin(e.target.checked)}
               ></input>
             </div>
-            <div>
+            <div className="multi-button">
               <button type="submit" className="primary">
                 Update
               </button>
