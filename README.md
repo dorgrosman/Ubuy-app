@@ -1,6 +1,6 @@
 # Ubuy-app
 
-![U-buy](https://user-images.githubusercontent.com/71778859/107683144-e1e3af00-6ca9-11eb-8530-dcbd59e2a9a1.jpg)
+![U-buy](https://user-images.githubusercontent.com/71778859/124159417-d0a60e00-daa3-11eb-8540-0c889ed58e32.PNG)
 
 
 1. [Technologies](#Technologies)
