@@ -19,7 +19,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 * The navbar navigates you on the site and stays fixed on that page.
 * The navbar has a menu for user, seller and admin.
 
- <img text-align="center" width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" /> <img style="text-align: center;"  width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111372495-60fe4580-86a3-11eb-953b-09122f5d3042.png" /> <img style="text-align: center;"  width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" />
+<!--  <img text-align="center" width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111371927-b1c16e80-86a2-11eb-8587-36d7158633ef.png" /> <img style="text-align: center;"  width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111372495-60fe4580-86a3-11eb-953b-09122f5d3042.png" /> <img style="text-align: center;"  width="250px" height="130px" src="https://user-images.githubusercontent.com/71778859/111371725-7888fe80-86a2-11eb-91ce-304fffc6a865.png" /> -->
 
 
  
@@ -48,8 +48,8 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Mobile:
 * The site is responsive and adapted to all devices with a customized menu.
 
-<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/113586867-bbe9e380-9636-11eb-8d55-6e195a147b2d.JPG" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/113586944-d3c16780-9636-11eb-9546-37d9b0c2edbe.JPG" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/113587001-e2a81a00-9636-11eb-94e6-dc0f98ad8d4a.png" />
-<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/113587126-079c8d00-9637-11eb-8297-a58b12fb9851.JPG" />
+<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/124147266-35a73700-da97-11eb-9b43-c5589f3ccbc5.JPG" />&nbsp;<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/124147360-4c4d8e00-da97-11eb-924f-eb8640cc1530.JPG" />&nbsp;
+<img text-align="center" height="500px" width="263px" src="https://user-images.githubusercontent.com/71778859/124147462-61c2b800-da97-11eb-82dc-3d58b474b96e.png" />
 </br>
 </br>
 
