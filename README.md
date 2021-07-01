@@ -2,6 +2,7 @@
 
 ![U-buy](https://user-images.githubusercontent.com/71778859/124159417-d0a60e00-daa3-11eb-8540-0c889ed58e32.PNG)
 
+<img text-align="center" height="500px"  width="650px" src="https://user-images.githubusercontent.com/71778859/124159417-d0a60e00-daa3-11eb-8540-0c889ed58e32.PNG" />
 
 1. [Technologies](#Technologies)
 2. [About-The-Project](#About-The-Project)
