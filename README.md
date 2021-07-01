@@ -3,8 +3,13 @@
 ![U-buy](https://user-images.githubusercontent.com/71778859/107683144-e1e3af00-6ca9-11eb-8530-dcbd59e2a9a1.jpg)
 
 1. [Description](#Description)
-2. * [Home-page](#Home-page)
-3. [Bild with](#Bild-with)
+ * [Home-page](#Home-page)
+ * [NavBar](#NavBar)
+ * [Product-Details](#Product-Details)
+ * [Cart-&-Payment](#Cart-&-Payment)
+ * [Admin](#Admin)
+ * [Mobile](#Mobile)
+2. [Bild with](#Bild-with)
  
     
 - [Heading](#heading-1)
