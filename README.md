@@ -11,13 +11,7 @@
    * [Mobile](#Mobile)
 2. [Bild with](#Bild-with)
  
-    
-- [Heading](#heading-1)
-  * [Sub-heading](#sub-heading-1)
-    + [Sub-sub-heading](#sub-sub-heading-1)
-- [Heading](#heading-2)
-  * [Sub-heading](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
+
 
 ## Demo
  working live demo https://u-buy-app.herokuapp.com/home
@@ -26,6 +20,10 @@
 Built an Amazon-style marketplace for an e-commerce website called “U-Buy”. 
 
 ## Description
+The U-Buy site is basically a site that has sellers and buyers.
+Any user, however, can sell items on the site after it has been approved by the admin.
+Buyers on the site can collect items for the shopping cart, and make payment and delivery to the customer's home.
+
 #### Home page: 
 * All items are displayed on the home page, and by clicking on the item itself, you can enter the item details.
 * At the top of the site is a navbar with options available for you.
