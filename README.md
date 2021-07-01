@@ -26,7 +26,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 
 #### Product Details:
 
-<img text-align="center" height="500px"  width="800px" src="https://user-images.githubusercontent.com/71778859/111373913-28f80200-86a5-11eb-8891-b71e77da80a8.JPG" />
+<img text-align="center" height="500px"  width="800px" src="https://user-images.githubusercontent.com/71778859/124142209-b4e63c00-da92-11eb-8382-e9a92a733fe6.JPG" />
 
 #### 
 
@@ -36,13 +36,13 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 * When you click on the item, you can see the details on it, and also add the item to your shopping cart.
 * You can choose to pay via pay-pal or via a regular credit card.
 
-<img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" /> <img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374486-d8cd6f80-86a5-11eb-9170-3025573364ae.JPG" />
+<!-- <img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374217-83915e00-86a5-11eb-91b0-8327eab737b0.JPG" /> <img text-align="center" width="400px" src="https://user-images.githubusercontent.com/71778859/111374486-d8cd6f80-86a5-11eb-9170-3025573364ae.JPG" /> -->
 
 
 #### Admin:
 * Admin has the option of adding products, updating and deleting them.
 * The admin can also confirm orders, delete users, etc.
-<img text-align="center" height="500px"  width="800px" src="https://user-images.githubusercontent.com/71778859/111382127-3fa35680-86af-11eb-9894-d44cadca0337.JPG" />
+<!-- <img text-align="center" height="500px"  width="800px" src="https://user-images.githubusercontent.com/71778859/111382127-3fa35680-86af-11eb-9894-d44cadca0337.JPG" /> -->
 
 
 #### Mobile:
