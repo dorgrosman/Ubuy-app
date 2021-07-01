@@ -20,7 +20,6 @@ import ProductListPage from './pages/ProductListPage/ProductListPage';
 import ProductEditPage from './pages/ProductEditPage/ProductEditPage';
 import OrderListPage from './pages/OrderListPage/OrderListPage';
 import UserListPage from './pages/UserListPage';
-import SearchBox from './cmps/SearchBox/SearchBox';
 import SearchPage from './pages/SearchPage/SearchPage';
 import UserEditPage from './pages/UserEtitPage/UserEtitPage';
 import SellerRoute from './cmps/SellerRouter/SellerRouter';

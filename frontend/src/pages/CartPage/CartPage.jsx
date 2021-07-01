@@ -27,7 +27,6 @@ const CartPage = (props) => {
    }
 
    const checkOutHendler = () => {
-
       props.history.push('/signin?redirect=shipping');
    };
    return (

@@ -42,7 +42,7 @@ export default function NavBar() {
                 <div>
                     <div className={`${navMobile ? 'navBar' : 'hide'} align-center`} style={{ display: navMobile && 'flex' }}>
                         <Link className='link' to="/home" onClick={() => toggleNavMobile(!navMobile)}><i className="fas fa-home navIcon"></i></Link>
-                        <Link className='link' to="/cart" onClick={() => toggleNavMobile(!navMobile)}><i className="fas fa-shopping-cart navIcon"></i>
+                        <Link className='link' to="/cart" onClick={() => toggleNavMobile(!navMobile)}><i className="fas fa-shopping-cart navIcon "></i>
                             {cartItems.length > 0 && (<span className="badge">{cartItems.length}</span>)}
                         </Link>
                         {

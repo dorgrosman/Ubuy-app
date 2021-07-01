@@ -142,9 +142,7 @@ button.block {
   box-sizing: border-box;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
 
 .badge {
   background-color: #292929;
@@ -268,9 +266,7 @@ a.logo {
 }
 /* Image */
 
-img {
-  // border-radius: 0.5rem;
-}
+
 
 img.medium {
   max-width: 19rem;
@@ -386,7 +382,6 @@ img.large {
 .cart-list:hover {
   background-color: rgb(245, 245, 212);
 }
-
 
 /* Alert */
 .loading {
@@ -507,7 +502,7 @@ img.large {
 }
 .search input:hover {
   // background-color: #606060;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08), 0 6px 9px 0 rgba(0,0,0,0.08), 0 8px 27px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 6px 9px 0 rgba(0, 0, 0, 0.08), 0 8px 27px 0 rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.4s ease-out;
   // box-shadow: 0 4px 4px 0 rgba(0,0,0,0.04), 0 6px 9px 0 rgba(0,0,0,0.04), 0 8px 27px 0 rgba(0,0,0,0.04);
 }
@@ -608,7 +603,7 @@ img.large {
   }
 }
 @media screen and (max-width: 775px) {
-  .grid-container{
+  .grid-container {
     grid-template-rows: 6.9rem 1fr 25rem;
   }
   .main-header {
@@ -662,6 +657,7 @@ img.large {
     // border-bottom: 3px solid #f0f0f0;
     // width: 80%;
   }
+ 
   .hamburger-menu {
     padding-left: 420px;
   }
@@ -757,8 +753,8 @@ img.large {
     padding-left: 220px;
   }
   // .grid-container {
-    // grid-template-rows: 40rem 10rem 1fr 20rem;
-    // grid-template-rows: -0.5rem 6rem 1fr 20rem;
+  // grid-template-rows: 40rem 10rem 1fr 20rem;
+  // grid-template-rows: -0.5rem 6rem 1fr 20rem;
   // }
   .product-page-payment-info {
     display: flex;
@@ -833,7 +829,6 @@ img.large {
   flex-direction: column;
 }
 
-
 .multi-button {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -841,7 +836,7 @@ img.large {
     background: white;
     border: 0.175em solid black;
     cursor: pointer;
-    font: 600 1.5rem/1.25 'Montserrat', sans-serif;
+    font: 600 1.5rem/1.25 "Montserrat", sans-serif;
     letter-spacing: 0.175em;
     margin: 0.5rem;
     padding: 0.5em 0.75em;
@@ -849,7 +844,7 @@ img.large {
     text-transform: uppercase;
     &:before,
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       transition: all 0.125s ease-in-out;
     }
