@@ -13,7 +13,7 @@ Built an Amazon-style marketplace for an e-commerce website called “U-Buy”.
 #### Home page: 
 * All items are displayed on the home page, and by clicking on the item itself, you can enter the item details.
 * At the top of the site is a navbar with options available for you.
- <img style="text-align: center;"  height="500px"  width="800px" src="https://github.com/dorgrosman/Ubuy-app/issues/2#issue-833137129G" />
+ <img style="text-align: center;"  height="500px"  width="800px" src="https://user-images.githubusercontent.com/71778859/124141282-f6c2b280-da91-11eb-9110-7c99e1d279fa.JPG" />
 
 #### NavBar:
 * The navbar navigates you on the site and stays fixed on that page.
