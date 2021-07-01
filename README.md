@@ -2,14 +2,16 @@
 
 ![U-buy](https://user-images.githubusercontent.com/71778859/107683144-e1e3af00-6ca9-11eb-8530-dcbd59e2a9a1.jpg)
 
-1. [Description](#Description)
+
+1. [Technologies](#Technologies)
+2. [About-The-Project](#About-The-Project)
    * [Home-page](#Home-page)
    * [NavBar](#NavBar)
    * [Product-Details](#Product-Details)
    * [Cart-&-Payment](#Cart-&-Payment)
    * [Admin](#Admin)
    * [Mobile](#Mobile)
-2. [Bild with](#Bild-with)
+3. [Bild with](#Bild-with)
  
 
 
@@ -19,7 +21,11 @@
 ## Site
 Built an Amazon-style marketplace for an e-commerce website called “U-Buy”. 
 
-## Description
+## Technologies
+For Frontand, I chose to use React, because I needed a strong library, which could handle a large number of components, fast information transfer, and relatively easy maintenance.
+For Backend I chose to use NodeJS, Easy to use.
+
+## About The Project
 The U-Buy site is basically a site that has sellers and buyers.
 Any user, however, can sell items on the site after it has been approved by the admin.
 Buyers on the site can collect items for the shopping cart, and make payment and delivery to the customer's home.
