@@ -68,7 +68,7 @@ const RegisterPage = (props) => {
                 </div>
                 <div>
                     <label />
-                    <div >New customer? {' '}
+                    <div > {' '}
                         Already have an account?<Link to={`/signin?redirect=${redirect}`}>Sign In</Link>
                     </div>
                     
