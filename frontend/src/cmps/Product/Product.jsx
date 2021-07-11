@@ -66,9 +66,9 @@ const Product = (props) => {
                 <Link to={`/product/${product._id}`}><p className="title" to={`/product/${product._id}`} >{product.name}</p><Link to={`/product/${product._id}`}><p className="desc" to={`/product/${product._id}`} >{product.description}</p></Link></Link>
                 <div className="flex space-between align-baseline">
                 <p className="pre-price row">Price : <p className="price"> {product.price} $</p></p>
-                <div>
+                {/* <div>
                     <p className="toggle-fav" onClick={(event) => toggleFavHendler(event)}><i className={productFavUpdate?.isFav ? "fas fa-heart" : "far fa-heart"}></i></p>
-                </div>
+                </div> */}
 
                 </div>
                 {/* <Rating
