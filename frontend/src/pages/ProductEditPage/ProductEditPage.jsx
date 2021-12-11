@@ -20,7 +20,7 @@ const ProductEditPage = (props) => {
     const dispatch = useDispatch();
     const productDetails = useSelector((state) => state.productDetails);
     // const productDetail = useSelector((state) => console.log('state:', state.productDetails ));
-    
+
     const { loading, error, product } = productDetails
 
 
@@ -54,7 +54,7 @@ const ProductEditPage = (props) => {
     }, [product, dispatch, productId, successUpdate, props.history])
 
     const submitHendler = (event) => {
-        console.log('event:', event)
+
         event.preventDefault()
         dispatch(productUpdate({
             _id: productId,
@@ -76,14 +76,14 @@ const ProductEditPage = (props) => {
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
 
-    const uploadFileHandler = async(evevt) => {
+    const uploadFileHandler = async (evevt) => {
         const file = evevt.target.files[0];
         const bodyFormData = new FormData();
-        
+
         bodyFormData.append('img', file);
         setLoadingUpload(true);
         try {
-            const { data } = await Axios.post('/api/uploads', bodyFormData,  {
+            const { data } = await Axios.post('/api/uploads', bodyFormData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     Authorization: `Bearer ${userInfo.token}`,
@@ -114,7 +114,6 @@ const ProductEditPage = (props) => {
                             <div>
                                 <label htmlFor="name">Name</label>
                                 <input
-
                                     id="name"
                                     type="text"
                                     placeholder="Enter Product Name"
@@ -182,7 +181,7 @@ const ProductEditPage = (props) => {
                                 <label></label>
                                 <div className="multi-button">
 
-                                <button className="primary" type="submit" >Updata</button>
+                                    <button className="primary" type="submit" >Updata</button>
                                 </div>
                             </div>
                         </>

@@ -20,16 +20,14 @@ export default function NavBar() {
     return (
         <div >
 
-        {/* // <header className=""> */}
+        
         <header className="flex align-center space-between justify-center column ">
             <div className="main-header flex align-center space-between">
-                {/* <div className=""> */}
+              
                 <div>
                     <Link className="logo" to="/home">U-buy</Link>
                 </div>
-                {/* <div>
-                        <Route render={({ history }) => <SearchBox history={history}></SearchBox>} />
-                    </div> */}
+                
                 <div className="hamburger-menu">
                     <a className={`${navMobile ? 'opened' : 'menu'}`} onClick={() => toggleNavMobile(!navMobile)} aria-label="Main Menu">
                         <svg width="60" height="60" viewBox="0 0 100 100" >
